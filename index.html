@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Metropolitano. Seguridad de la Información y Ciberseguridad. 2026</title>
+  <meta name="description"
+    content="Presentación Institucional sobre Marco Normativo de Ciberseguridad y Protección de Datos en el Hospital Metropolitano 2026.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Formas Fluidas de Fondo (Fluid Motion BG) -->
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+
+  <!-- Header Institucional Fijo -->
+  <header class="app-header">
+    <div class="header-branding">
+      <img src="logo.png" alt="Logo Hospital Metropolitano" class="header-logo">
+      <div class="header-title-exact">Hospital Metropolitano. Seguridad de la Información y Ciberseguridad. 2026</div>
+    </div>
+    <div class="header-status">
+      <div class="slide-counter-badge">
+        Lámina <span id="currentSlideBadge">1</span> / <span id="totalSlidesBadge">11</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra de Progreso Superior -->
+  <div class="progress-bar-container">
+    <div class="progress-bar-fill" id="progressBarFill"></div>
+  </div>
+
+  <!-- Viewport de Presentación Principal -->
+  <main class="presentation-viewport">
+
+    <!-- ==================== LÁMINA 1 (NUEVA: ESTADÍSTICAS Y PANORAMA) ==================== -->
+    <section class="slide active" id="slide-1"
+      data-speaker-notes="&quot;Bienvenidos. Iniciamos esta sesión analizando el panorama global de ciberseguridad y el impacto real de las brechas de datos en el sector salud. Las estadísticas globales revelan que un ataque a una institución sanitaria genera costos superiores a los 11 millones de dólares y que en el 95% de los casos el factor humano es determinante. Revisa el detalle estadístico interactivo en el botón a continuación.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Panorama Global • Ciberseguridad 2026</span>
+          <h1 class="slide-h1">Estadísticas y Contexto de Riesgos en Salud</h1>
+          <p class="slide-subtitle">Impacto Económico, Vectores de Ataque y Vulnerabilidades de la Infraestructura
+            Crítica</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/estadisticas.jpg" alt="Estadísticas de Ciberseguridad 2026"
+            onerror="this.src='imagenes/photo-1674669009418-2643aa58b11b.avif'">
+        </div>
+      </div>
+
+      <div class="slide-grid-2">
+        <div class="fluid-card fluid-card-purple">
+          <div class="card-header">
+            <div class="card-icon card-icon-lavender">📊</div>
+            <h2 class="card-h2">Estadísticas Críticas del Sector Salud</h2>
+          </div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-bullet">1</span>
+                <div>
+                  <strong>Costo Promedio en Salud:</strong>
+                  Hasta <strong>USD 11,2 Millones</strong> por brecha de datos en instituciones médicas (más del doble
+                  del promedio global).
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">2</span>
+                <div>
+                  <strong>El Factor Humano:</strong>
+                  Involucrado en entre el <strong>68% y el 95%</strong> de los incidentes cibernéticos globales.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">3</span>
+                <div>
+                  <strong>Principal Vector de Entrada:</strong>
+                  El <em>Phishing</em> impulsado por IA sigue siendo la puerta de acceso principal a las redes
+                  institucionales.
+                </div>
+              </li>
+            </ul>
+
+            <button class="popup-btn" onclick="openModal('modalEstadisticas')"
+              style="margin-top: 22px; width: 100%; justify-content: center;">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" />
+              </svg>
+              📊 Ver Detalle Estadístico Completo y Conceptos Clave
+            </button>
+          </div>
+        </div>
+
+        <div class="fluid-image-wrapper organic-shape-mask" onclick="openModal('modalImgEstadisticas')"
+          style="cursor: pointer;" title="Haz clic para ampliar la imagen a pantalla completa">
+          <img src="imagenes/estadisticas.jpg" onerror="this.src='imagenes/estadisticas.png'"
+            alt="Estadísticas de Ciberseguridad y Brechas de Datos">
+          <div class="fluid-image-overlay">
+            🔍 Clic para ampliar Imagen de Estadísticas a Pantalla Completa
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 2 ==================== -->
+    <section class="slide" id="slide-2"
+      data-speaker-notes="&quot;Buenos días / tardes. La presente sesión aborda las exigencias legales que rigen el tratamiento de la información y la infraestructura digital en nuestra institución. El cumplimiento de estas normas es obligatorio para todo el personal, independientemente de su régimen contractual. Analizaremos las implicancias jurídicas directas sobre el puesto de trabajo y las conductas requeridas para dar cumplimiento al marco regulatorio vigente.&quot;">
+      <div class="slide-title-group">
+        <span class="slide-tag">Parte 1 • Diapositiva 1</span>
+        <h1 class="slide-h1">Marco Normativo de Ciberseguridad y Protección de Datos</h1>
+        <p class="slide-subtitle">Cumplimiento de Obligaciones Legales Institucionales (Ley N° 21.663 y Ley N° 21.719)
+        </p>
+      </div>
+
+      <div class="slide-grid-2">
+        <div class="fluid-card">
+          <div class="card-header">
+            <div class="card-icon">🏛️</div>
+            <h2 class="card-h2">Lineamientos Estratégicos Institucionales</h2>
+          </div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-bullet">1</span>
+                <div>
+                  <strong>Clasificación del Hospital como OIV:</strong>
+                  El Hospital Metropolitano está categorizado legalmente como <em>Operador de Importancia Vital
+                    (OIV)</em> bajo el nuevo ecosistema de ciberseguridad nacional.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">2</span>
+                <div>
+                  <strong>Responsabilidad Individual Nominativa:</strong>
+                  Obligatoriedad de cumplimiento de controles técnicos e instructivos sectoriales para todo el personal
+                  clínico, administrativo y de apoyo.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">3</span>
+                <div>
+                  <strong>Continuidad Asistencial Garantizada:</strong>
+                  La ciberseguridad es un componente esencial de la seguridad del paciente y de la resiliencia operativa
+                  del servicio de salud.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fluid-image-wrapper organic-shape-mask">
+          <img src="imagenes/photo-1691318043266-4c673ed13b8f.avif" alt="Personal médico en hospital">
+          <div class="fluid-image-overlay">
+            Hospital Metropolitano • Infraestructura Crítica de Salud
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 3 ==================== -->
+    <section class="slide" id="slide-3"
+      data-speaker-notes="&quot;Bajo la Ley N° 21.663, el hospital está clasificado como Operador de Importancia Vital. La ley obliga a mantener la operación continua de los sistemas y a reportar cualquier evento anómalo dentro de un límite estricto de 3 horas. La detección oportuna en el equipo de usuario es el insumo inicial necesario para activar el protocolo de contención institucional. Despleguemos el detalle técnico de esta ley.&quot;">
+      <div class="slide-title-group">
+        <span class="slide-tag">Parte 1 • Diapositiva 2</span>
+        <h1 class="slide-h1">Ley Marco de Ciberseguridad N° 21.663: Exigencias y Tiempos de Respuesta</h1>
+        <p class="slide-subtitle">Obligaciones Legales como Operador de Importancia Vital (OIV)</p>
+      </div>
+
+      <div class="slide-grid-2">
+        <div class="fluid-card">
+          <div class="card-header">
+            <div class="card-icon">⚡</div>
+            <h2 class="card-h2">Exigencias Directas de la Ley N° 21.663</h2>
+          </div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-bullet">A</span>
+                <div>
+                  <strong>Categoría Oficial:</strong> Servicio Esencial / Operador de Importancia Vital (OIV).
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">B</span>
+                <div>
+                  <strong>Implementación Continua:</strong> Mantenimiento de medidas avanzadas de ciberseguridad y
+                  planes de continuidad operacional probados.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">C</span>
+                <div>
+                  <strong>Ventana de Reporte Crítica:</strong> Notificación obligatoria de incidentes significativos a
+                  la ANCI y CSIRT Nacional dentro del plazo máximo de <strong>3 horas</strong> desde su detección.
+                </div>
+              </li>
+            </ul>
+
+            <button class="popup-btn" onclick="openModal('modalPop1')">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+              </svg>
+              💬 Pop-up Interactivo 1: Detalle Normativo Ley N° 21.663 y Decreto N° 295
+            </button>
+          </div>
+        </div>
+
+        <div class="fluid-image-wrapper organic-shape-2">
+          <img src="imagenes/photo-1599045118108-bf9954418b76.avif" alt="Centro de datos e infraestructura de red">
+          <div class="fluid-image-overlay">
+            Infraestructura de Servidores Críticos y Redes del Hospital
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 4 ==================== -->
+    <section class="slide" id="slide-4"
+      data-speaker-notes="&quot;El tratamiento de los datos personales y de salud está regulado por la Ley N° 20.584 y la Ley N° 21.719. El acceso a las bases de datos corporativas está limitado al principio de necesidad de saber y al rol asignado a la función del trabajador. Toda consulta en el sistema queda registrada en bitácoras de auditoría no modificables. Veamos los derechos y deberes asociados en el siguiente pop-up.&quot;">
+      <div class="slide-title-group">
+        <span class="slide-tag">Parte 1 • Diapositiva 3</span>
+        <h1 class="slide-h1">Leyes N° 20.584 y N° 21.719 – Tratamiento de Datos Personales</h1>
+        <p class="slide-subtitle">Privacidad de Datos y Control de Acceso por Rol (RBAC)</p>
+      </div>
+
+      <div class="slide-grid-2">
+        <div class="fluid-card fluid-card-purple">
+          <div class="card-header">
+            <div class="card-icon card-icon-lavender">🛡️</div>
+            <h2 class="card-h2">Resguardo de Información y Datos Sensibles</h2>
+          </div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-bullet">1</span>
+                <div>
+                  <strong>Ley N° 20.584:</strong> Reserva legal de la Ficha Clínica y trazabilidad de registros médicos
+                  del paciente.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">2</span>
+                <div>
+                  <strong>Ley N° 21.719:</strong> Clasificación explícita de todos los datos de salud como <em>datos
+                    sensibles</em> bajo especial protección legal.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">3</span>
+                <div>
+                  <strong>Auditabilidad Nominativa:</strong> Registro sistemático e imborrable de accesos (logs) en
+                  sistemas vinculados a la identidad individual.
+                </div>
+              </li>
+            </ul>
+
+            <button class="popup-btn" onclick="openModal('modalPop2')">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+              </svg>
+              💬 Pop-up Interactivo 2: Detalle Normativo Ley N° 21.719 y Ley N° 20.584
+            </button>
+          </div>
+        </div>
+
+        <div class="fluid-image-wrapper organic-shape-3">
+          <img src="imagenes/photo-1516574187841-cb9cc2ca948b.avif" alt="Atención clínica bedside con tablet">
+          <div class="fluid-image-overlay">
+            Ficha Clínica Digital y Privacidad en la Atención al Paciente
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 5 ==================== -->
+    <section class="slide" id="slide-5"
+      data-speaker-notes="&quot;El Ministerio de Salud operativiza estas leyes mediante el Instructivo ITS-NC-007 y sus resoluciones complementarias. Este marco establece normas de obligatorio cumplimiento: prohibición absoluta de compartir credenciales, uso obligatorio de autenticación multifactor y el bloqueo sistemático de la pantalla al ausentarse de la estación de trabajo. Revisemos las exigencias operativas específicas.&quot;">
+      <div class="slide-title-group">
+        <span class="slide-tag">Parte 1 • Diapositiva 4</span>
+        <h1 class="slide-h1">Instructivos MINSAL y Políticas Locales</h1>
+        <p class="slide-subtitle">Estándares Técnicos Directos: ITS-NC-007 y Políticas SGSI</p>
+      </div>
+
+      <div class="slide-grid-2">
+        <div class="fluid-card">
+          <div class="card-header">
+            <div class="card-icon">🔑</div>
+            <h2 class="card-h2">Controles Técnicos del Sector Salud</h2>
+          </div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-bullet">1</span>
+                <div>
+                  <strong>Instructivo ITS-NC-007 v2.0:</strong> Estándares mínimos de ciberseguridad sectorial para
+                  instituciones de salud pública y privada.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">2</span>
+                <div>
+                  <strong>Política PS-NC-007:</strong> Control físico y visual estricto de escritorios y pantallas
+                  limpias en todos los puestos de trabajo.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">3</span>
+                <div>
+                  <strong>Control de Identidad:</strong> Credenciales nominativas e intransferibles + Autenticación
+                  Multifactor (MFA) obligatoria en todos los accesos.
+                </div>
+              </li>
+            </ul>
+
+            <button class="popup-btn" onclick="openModal('modalPop3')">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+              </svg>
+              💬 Pop-up Interactivo 3: Detalle de Instructivos MINSAL y Normativa Complementaria
+            </button>
+          </div>
+        </div>
+
+        <div class="fluid-image-wrapper organic-shape-mask">
+          <img src="imagenes/E104GZA6.avif" alt="Integración digital de sistemas médicos">
+          <div class="fluid-image-overlay">
+            Sistemas Digitales de Salud Integrados bajo Norma MINSAL
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 6 ==================== -->
+    <section class="slide" id="slide-6"
+      data-speaker-notes="&quot;A continuación revisamos la matriz de conductas según el marco normativo vigente. Cada exigencia legal o técnica exige abandonar conductas inapropiadas que constituyen infracciones graves y adoptar las conductas apropiadas de cumplimiento en el día a día.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Parte 2</span>
+          <h1 class="slide-h1">Ejemplos de Conductas Según Marco Normativo</h1>
+          <p class="slide-subtitle">Matriz Comparativa de Infracciones vs Conductas de Cumplimiento</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/E108C0F5.avif" alt="Cumplimiento normativo y supervisión">
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th style="width: 18%;">Ámbito Normativo</th>
+              <style>
+                .custom-table th {
+                  background: linear-gradient(90deg, #0d47a1 0%, #00a896 100%);
+                }
+              </style>
+              <th style="width: 25%;">Exigencia Legal / Técnica</th>
+              <th style="width: 28%;">❌ Conducta Inapropiada (Infracción)</th>
+              <th style="width: 29%;">✅ Conducta Apropiada (Cumplimiento)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ley N° 21.663 (OIV)</strong></td>
+              <td>Continuidad operativa y reporte inmediato de incidentes en <strong>≤ 3 horas</strong>.</td>
+              <td><span class="tag-bad">Infracción</span> Ocultar comportamientos anómalos o bloqueos de pantalla por
+                extorsión para evitar fiscalizaciones.</td>
+              <td><span class="tag-good">Cumplimiento</span> Notificar de forma inmediata a Soporte TI / CISO tras
+                detectar un fallo o mensaje inusual.</td>
+            </tr>
+            <tr>
+              <td><strong>Ley N° 21.719 / N° 20.584</strong></td>
+              <td>Resguardo de datos sensibles y acceso exclusivo por rol asignado (RBAC).</td>
+              <td><span class="tag-bad">Infracción</span> Consultar registros o historiales de terceros por interés
+                personal, familiar o curioso.</td>
+              <td><span class="tag-good">Cumplimiento</span> Acceder únicamente a la información requerida de forma
+                estricta para el cumplimiento de las funciones del cargo.</td>
+            </tr>
+            <tr>
+              <td><strong>ITS-NC-007 (MINSAL)</strong></td>
+              <td>Credenciales nominativas e implementación de MFA.</td>
+              <td><span class="tag-bad">Infracción</span> Compartir el usuario y clave con compañeros de turno o
+                practicantes.</td>
+              <td><span class="tag-good">Cumplimiento</span> Ingresar exclusivamente con cuenta propia y validar el
+                acceso mediante el segundo factor autorizado (MFA).</td>
+            </tr>
+            <tr>
+              <td><strong>Política PS-NC-007</strong></td>
+              <td>Control físico y visual de las estaciones de trabajo.</td>
+              <td><span class="tag-bad">Infracción</span> Ausentarse del escritorio dejando la sesión de usuario abierta
+                o anotar claves en soportes físicos visibles.</td>
+              <td><span class="tag-good">Cumplimiento</span> Bloquear la sesión del sistema (Win + L) al levantarse del
+                puesto y resguardar claves en gestores autorizados.</td>
+            </tr>
+            <tr>
+              <td><strong>Política PS-NC-004</strong></td>
+              <td>Uso exclusivo de canales e infraestructura oficial.</td>
+              <td><span class="tag-bad">Infracción</span> Enviar archivos con datos institucionales a través de WhatsApp
+                o correos personales.</td>
+              <td><span class="tag-good">Cumplimiento</span> Almacenar y transmitir documentos utilizando repositorios
+                oficiales institucionales y correo corporativo.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 7 ==================== -->
+    <section class="slide" id="slide-7"
+      data-speaker-notes="&quot;Esta tabla sintética clasifica los incidentes en 4 dimensiones estratégicas: Factor Humano, Resiliencia Tecnológica, Procesos y Ecosistema de Terceros, permitiendo identificar la palanca de gestión específica para cada tipo de riesgo.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Parte 3</span>
+          <h1 class="slide-h1">Clasificación Sintética de Incidentes de Ciberseguridad</h1>
+          <p class="slide-subtitle">Estructura Analítica para la Gestión Ejecutiva del Hospital</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/premium_photo-1674669009418-2643aa58b11b.avif" alt="Dashboard ejecutivo de ciberseguridad">
+        </div>
+      </div>
+
+      <div class="slide-grid-4">
+        <div class="fluid-card">
+          <div class="card-header">
+            <div class="card-icon">🧠</div>
+            <h2 class="card-h2">1. Factor Humano y Conducta</h2>
+          </div>
+          <div class="card-body">
+            <p><strong>Enfoque:</strong> Impacto de acciones, errores o falta de conciencia de las personas.</p>
+            <p><strong>Subcategorías:</strong> Ingeniería Social (Phishing/Vishing), Contraseñas débiles/compartidas,
+              Fuga de datos humana, Shadow IT/BYOD.</p>
+            <p style="color: var(--color-primary-teal); font-weight: 600;">🛠️ Palanca: Concientización, simulaciones y
+              políticas de uso aceptable.</p>
+          </div>
+        </div>
+
+        <div class="fluid-card">
+          <div class="card-header">
+            <div class="card-icon">💻</div>
+            <h2 class="card-h2">2. Resiliencia Tecnológica</h2>
+          </div>
+          <div class="card-body">
+            <p><strong>Enfoque:</strong> Efectividad de controles automatizados e infraestructura.</p>
+            <p><strong>Subcategorías:</strong> Vulnerabilidades sin parchar, Fallas perimetrales (firewalls),
+              Malware/Ransomware en endpoints, Errores cloud.</p>
+            <p style="color: var(--color-primary-teal); font-weight: 600;">🛠️ Palanca: Gestión de parches, Hardening y
+              EDR/XDR.</p>
+          </div>
+        </div>
+
+        <div class="fluid-card">
+          <div class="card-header">
+            <div class="card-icon">⚙️</div>
+            <h2 class="card-h2">3. Procesos y Operación</h2>
+          </div>
+          <div class="card-body">
+            <p><strong>Enfoque:</strong> Madurez de procedimientos internos, detección y respuesta.</p>
+            <p><strong>Subcategorías:</strong> Errores en gestión de cambios, Demoras en detección/contención
+              (MTTD/MTTR), Fallas en respaldos.</p>
+            <p style="color: var(--color-primary-teal); font-weight: 600;">🛠️ Palanca: Monitoreo SOC, Backups
+              inmutables y pruebas de continuidad.</p>
+          </div>
+        </div>
+
+        <div class="fluid-card">
+          <div class="card-header">
+            <div class="card-icon">🔗</div>
+            <h2 class="card-h2">4. Ecosistema de Terceros</h2>
+          </div>
+          <div class="card-body">
+            <p><strong>Enfoque:</strong> Riesgo heredado de proveedores y cadena de suministro.</p>
+            <p><strong>Subcategorías:</strong> Ataques a proveedores de software, Incumplimiento normativo de terceros,
+              Cuentas de proveedores sin control.</p>
+            <p style="color: var(--color-primary-teal); font-weight: 600;">🛠️ Palanca: Auditorías, PAM para terceros y
+              cláusulas contractuales SLA.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 8 ==================== -->
+    <section class="slide" id="slide-8"
+      data-speaker-notes="&quot;Revisamos los consejos prácticos en gestión de identidad. El uso de credenciales simples o compartidas es una causa directa de incidentes graves. Las credenciales corporativas constituyen una firma legal estricta y nominativa.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Parte 4 • Sección 1</span>
+          <h1 class="slide-h1">Identidad, Autenticación y Gestión de Claves</h1>
+          <p class="slide-subtitle">Errores Comunes vs Buenas Prácticas y Razones de Riesgo (Normativa OIV / MINSAL)</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/photo-1584820927498-cfe5211fd8bf.avif" alt="Seguridad de identidad y teclado">
+        </div>
+      </div>
+
+      <div class="practice-grid">
+        <div class="practice-card-bad">
+          <div class="practice-title-bad">❌ Errores Comunes</div>
+          <ul>
+            <li><strong>Homologación de credenciales:</strong> Reutilizar la contraseña corporativa en banca en línea,
+              e-commerce o ClaveÚnica.</li>
+            <li><strong>Préstamo de accesos:</strong> Entregar el usuario y clave a terceros para agilizar tareas
+              operativas.</li>
+            <li><strong>Aprobación ciega de MFA:</strong> Aprobar notificaciones push en el teléfono personal sin estar
+              iniciando sesión activamente.</li>
+          </ul>
+        </div>
+
+        <div class="practice-card-good">
+          <div class="practice-title-good">✅ Buenas Prácticas y Razones de Riesgo</div>
+          <div class="practice-list">
+            <div class="practice-item">
+              <div class="practice-text"><strong>1. Gestores de contraseñas autorizados:</strong> Crear cadenas
+                complejas (mínimo 12 caracteres, mayúsculas, minúsculas, números y símbolos).</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Claves simples son descifradas en segundos por
+                ataques de fuerza bruta automatizados.</div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-text"><strong>2. Separación estricta de identidades:</strong> Desvincular clave
+                personal de la cuenta institucional.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Evita el ataque de Credential Stuffing ante
+                filtraciones externas.</div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-text"><strong>3. Validar manualmente cada MFA:</strong> Rechazar notificaciones no
+                gatilladas por el usuario.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Protege contra técnicas de "MFA Fatigue"
+                (bombardeo de solicitudes).</div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-text"><strong>4. Firma Legal Nominativa:</strong> La credencial es intransferible.
+              </div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Las bitácoras de auditoría (logs) lo señalarán
+                como responsable directo ante delitos.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 9 ==================== -->
+    <section class="slide" id="slide-9"
+      data-speaker-notes="&quot;El correo electrónico representa el vector de entrada del 90% de los ataques de Ransomware en el sector público. Inspeccionar hipervínculos antes de hacer clic y notificar mensajes sospechosos es la primera línea de defensa hospitalaria.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Parte 4 • Sección 2</span>
+          <h1 class="slide-h1">Correo Electrónico, Phishing y Reputación Web</h1>
+          <p class="slide-subtitle">Prevención de Ingeniería Social e Infección por Phishing</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/photo-1633265486064-086b219458ec.avif" alt="Candado digital de ciberseguridad">
+        </div>
+      </div>
+
+      <div class="practice-grid">
+        <div class="practice-card-bad">
+          <div class="practice-title-bad">❌ Errores Comunes</div>
+          <ul>
+            <li><strong>Validación solo por nombre visible:</strong> Confiar en remitentes sin verificar la dirección de
+              correo real.</li>
+            <li><strong>Ganchos de urgencia:</strong> Caer ante amenazas de "cierre inmediato de cuenta",
+              "notificaciones judiciales" o "facturas pendientes".</li>
+            <li><strong>Registro externo:</strong> Usar el correo institucional en promociones, comercios o redes
+              sociales personales.</li>
+          </ul>
+        </div>
+
+        <div class="practice-card-good">
+          <div class="practice-title-good">✅ Buenas Prácticas y Razones de Riesgo</div>
+          <div class="practice-list">
+            <div class="practice-item">
+              <div class="practice-text"><strong>1. Inspección de enlaces (Hover Check):</strong> Verificar dominios
+                oficiales <code>.gob.cl</code> o <code>.cl</code>.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> El 90% del Ransomware se inicia con un clic en
+                Phishing descargando un script malicioso.</div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-text"><strong>2. Ignorar presión de urgencia:</strong> Ninguna entidad pública
+                solicita claves urgentes por correo.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> La ingeniería social busca anular el pensamiento
+                crítico a través del pánico.</div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-text"><strong>3. Botón de reporte de Phishing / CISO:</strong> Reportar
+                inmediatamente.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Permite a TI bloquear el dominio malicioso a
+                nivel perimetral para todo el hospital.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 10 ==================== -->
+    <section class="slide" id="slide-10"
+      data-speaker-notes="&quot;El control de la superficie de ataque implica proteger lo que publicamos y cómo manejamos el puesto de trabajo. Bloquear la pantalla al ausentarse (Win + L) evita el compromiso físico.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Parte 4 • Sección 3</span>
+          <h1 class="slide-h1">Redes Sociales, Privacidad y Superficie de Ataque</h1>
+          <p class="slide-subtitle">Protección del Puesto de Trabajo y Prevención de Fugas OSINT</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/photo-1530497610245-94d3c16cda28.avif" alt="Smartphone y estetoscopio">
+        </div>
+      </div>
+
+      <div class="practice-grid">
+        <div class="practice-card-bad">
+          <div class="practice-title-bad">❌ Errores Comunes</div>
+          <ul>
+            <li><strong>Exposición visual de pantallas:</strong> Fotos o videos en redes donde se aprecian datos de
+              pacientes o software.</li>
+            <li><strong>Comentarios técnicos públicos:</strong> Revelar marcas de antivirus, versión de SO o red del
+              hospital en foros.</li>
+            <li><strong>Grupos de mensajería no oficiales:</strong> Enviar documentos reservados por WhatsApp personal.
+            </li>
+          </ul>
+        </div>
+
+        <div class="practice-card-good">
+          <div class="practice-title-good">✅ Buenas Prácticas y Razones de Riesgo</div>
+          <div class="practice-list">
+            <div class="practice-item">
+              <div class="practice-text"><strong>1. Escritorio y Pantalla Limpia:</strong> No fotografiar ni grabar
+                estaciones de trabajo encendidas.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Evita que ciberdelincuentes apliquen OSINT para
+                planificar ataques dirigidos.</div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-text"><strong>2. Bloqueo de sesión (Win + L):</strong> Bloquear la pantalla al
+                ausentarse, aunque sean segundos.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Evita la intrusión física y la instalación de
+                Keyloggers por USB.</div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-text"><strong>3. Repositorios Oficiales Institucionales:</strong> Prohibido el uso de
+                nubes o mensajería privada.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Evita fugas de datos confidenciales en
+                servidores externos no gestionados.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 11 ==================== -->
+    <section class="slide" id="slide-11"
+      data-speaker-notes="&quot;Los dispositivos físicos y las conexiones remotas deben mantenerse bajo estricto control corporativo. Está prohibido el uso de pendrives personales y la desactivación del antivirus local.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Parte 4 • Sección 4</span>
+          <h1 class="slide-h1">Dispositivos, Almacenamiento y Conexiones</h1>
+          <p class="slide-subtitle">Seguridad de Hardware, Redes Remotas y Respaldos Corporativos</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/photo-1584433144859-1fc3ab64a957.avif" alt="Estación de trabajo y laboratorio">
+        </div>
+      </div>
+
+      <div class="practice-grid">
+        <div class="practice-card-bad">
+          <div class="practice-title-bad">❌ Errores Comunes</div>
+          <ul>
+            <li><strong>Unidades extraíbles personales:</strong> Conectar pendrives o discos USB externos en
+              computadores de la red.</li>
+            <li><strong>Wi-Fi pública sin VPN:</strong> Trabajar en redes abiertas sin activar la VPN corporativa.</li>
+            <li><strong>Alteración de agentes de seguridad:</strong> Intentar desactivar o modificar el antivirus/EDR
+              local.</li>
+          </ul>
+        </div>
+
+        <div class="practice-card-good">
+          <div class="practice-title-good">✅ Buenas Prácticas y Razones de Riesgo</div>
+          <div class="practice-list">
+            <div class="practice-item">
+              <div class="practice-text"><strong>1. Prohibición de pendrives personales:</strong> Usar únicamente
+                canales autorizados.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Los USB son el vector primario de propagación
+                silenciosa de malware AutoRun.</div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-text"><strong>2. VPN Corporativa con Cifrado y MFA:</strong> Obligatoria en
+                conexiones fuera del hospital.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Bloquea ataques Man-in-the-Middle y la captura
+                de credenciales en redes abiertas.</div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-text"><strong>3. Nube Institucional (OneDrive/SharePoint):</strong> Evitar guardar
+                archivos únicos en el disco C:.</div>
+              <div class="risk-callout">🛑 <strong>Riesgo OIV:</strong> Los discos locales no tienen respaldo inmutable
+                ante ataques de Ransomware.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 12 ==================== -->
+    <section class="slide" id="slide-12"
+      data-speaker-notes="&quot;A continuación analizamos el marco estructural de un ciberataque a través de sus 7 fases de intrusión o Cyber Kill Chain. El atacante comienza recopilando información expuesta (Reconocimiento), prepara diccionarios de claves (Armamentización), logra el acceso inicial mediante fuerza bruta o la falta de MFA (Explotación), establece persistencia e instala puertas traseras (Instalación), eleva privilegios a Administrador de Dominio, crea un canal constante de Comando y Control (C2) y finalmente ejecuta el impacto mediante exfiltración de datos y cifrado.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Marco de Intrusión • Cyber Kill Chain</span>
+          <h1 class="slide-h1">Las 7 Fases de la Cadena de Intrusión Cibernética</h1>
+          <p class="slide-subtitle">Anatomía Estructural de un Ciberataque a la Infraestructura Hospitalaria</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/E108C0F5.avif" alt="Análisis de inteligencia de amenazas">
+        </div>
+      </div>
+
+      <div class="killchain-grid-container">
+        <div class="killchain-card">
+          <div class="killchain-card-header">
+            <span class="killchain-badge">Fase 1</span>
+            <span class="killchain-title">Reconocimiento</span>
+          </div>
+          <div class="killchain-formal">Nombre Formal: Reconocimiento / Recopilación de Inteligencia</div>
+          <p><strong>Qué ocurre:</strong> Recopilación de información pública o expuesta sobre la organización
+            (empleados, tecnologías, IPs o paneles de acceso).</p>
+          <p style="margin-top: 6px; color: var(--color-navy-dark);"><strong>Caso Hospitalario:</strong> Identificación de accesos remotos expuestos (VPN, SSH o portales web), alimentada por conductas vulnerables del personal: credenciales visibles o anotadas en el puesto de trabajo, uso del correo institucional en sitios personales comprometidos por brechas de datos o publicación de fotos en redes sociales exponiendo pantallas y usuarios del hospital.</p>
+        </div>
+
+        <div class="killchain-card">
+          <div class="killchain-card-header">
+            <span class="killchain-badge">Fase 2</span>
+            <span class="killchain-title">Armamentización</span>
+          </div>
+          <div class="killchain-formal">Nombre Formal: Desarrollo de Recursos (Resource Development / Weaponization)
+          </div>
+          <p><strong>Qué ocurre:</strong> Preparación de infraestructura y herramientas para el ataque (scripts de
+            automatización, diccionarios de claves y payloads).</p>
+          <p style="margin-top: 6px; color: var(--color-navy-dark);"><strong>Caso Hospitalario:</strong> Configuración
+            de herramientas de fuerza bruta cargadas con diccionarios de claves por defecto (ej. Admin123).</p>
+        </div>
+
+        <div class="killchain-card">
+          <div class="killchain-card-header">
+            <span class="killchain-badge">Fase 3</span>
+            <span class="killchain-title">Entrega y Explotación</span>
+          </div>
+          <div class="killchain-formal">Nombre Formal: Acceso Inicial (Initial Access) y Explotación</div>
+          <p><strong>Qué ocurre:</strong> Intento de vulneración del perímetro mediante debilidades humanas o fallas
+            técnicas de control.</p>
+          <p style="margin-top: 6px; color: var(--color-navy-dark);"><strong>Caso Hospitalario:</strong> Fuerza bruta /
+            credential stuffing sin bloqueo de intentos ni MFA; validación exitosa de credencial débil.</p>
+        </div>
+
+        <div class="killchain-card">
+          <div class="killchain-card-header">
+            <span class="killchain-badge">Fase 4</span>
+            <span class="killchain-title">Ejecución e Instalación</span>
+          </div>
+          <div class="killchain-formal">Nombre Formal: Ejecución / Instalación / Persistencia (Persistence)</div>
+          <p><strong>Qué ocurre:</strong> Afianzamiento de posición dentro del sistema para garantizar acceso continuo.
+          </p>
+          <p style="margin-top: 6px; color: var(--color-navy-dark);"><strong>Caso Hospitalario:</strong> Comandos
+            internos con rol comprometido y creación de puertas traseras (backdoors) o usuarios ocultos.</p>
+        </div>
+
+        <div class="killchain-card">
+          <div class="killchain-card-header">
+            <span class="killchain-badge">Fase 5</span>
+            <span class="killchain-title">Escalamiento de Privilegios</span>
+          </div>
+          <div class="killchain-formal">Nombre Formal: Escalamiento de Privilegios (Privilege Escalation)</div>
+          <p><strong>Qué ocurre:</strong> Explotación de malconfiguraciones del sistema operativo para obtener permisos
+            de Administrador (Root / Domain Admin).</p>
+          <p style="margin-top: 6px; color: var(--color-navy-dark);"><strong>Caso Hospitalario:</strong> El usuario
+            inicial de bajo nivel toma control total de la infraestructura interna hospitalaria.</p>
+        </div>
+
+        <div class="killchain-card">
+          <div class="killchain-card-header">
+            <span class="killchain-badge">Fase 6</span>
+            <span class="killchain-title">Comando y Control (C2)</span>
+          </div>
+          <div class="killchain-formal">Nombre Formal: Comando y Control (Command and Control / C2)</div>
+          <p><strong>Qué ocurre:</strong> Establecimiento de canal cifrado de comunicación hacia servidores externos del
+            atacante.</p>
+          <p style="margin-top: 6px; color: var(--color-navy-dark);"><strong>Caso Hospitalario:</strong> Envío periódico
+            de datos (heartbeats) hacia la red externa para mantener el acceso remoto ininterrumpido.</p>
+        </div>
+
+        <div class="killchain-card" style="grid-column: span 2;">
+          <div class="killchain-card-header">
+            <span class="killchain-badge" style="background: var(--color-alert-red);">Fase 7</span>
+            <span class="killchain-title" style="color: var(--color-alert-red);">Acciones sobre el Objetivo /
+              Monetización</span>
+          </div>
+          <div class="killchain-formal">Nombre Formal: Acciones sobre Objetivos (Actions on Objectives / Exfiltration &
+            Impact)</div>
+          <p><strong>Qué ocurre:</strong> Ejecución del propósito malicioso final (robo masivo de información y sabotaje
+            de la operación).</p>
+          <p style="margin-top: 6px; color: var(--color-navy-dark);"><strong>Caso Hospitalario:</strong> Exfiltración
+            masiva de datos sensibles de pacientes, robo de fichas clínicas y despliegue del ransomware que cifra
+            servidores y paraliza la atención asistencial.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 13 ==================== -->
+    <section class="slide" id="slide-13"
+      data-speaker-notes="&quot;Analizamos finalmente la secuencia de detonación de un ataque de Ransomware en 5 fases. Comprender esta progresión demuestra cómo una simple omisión de conducta individual desencadena la paralización completa del hospital.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Parte 5 • Diapositiva 13</span>
+          <h1 class="slide-h1">Un Paso a Paso de Cómo se Activa un Ransomware</h1>
+          <p class="slide-subtitle">Secuencia de Detonación, Fallas de Control e Impacto Logrado</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/photo-1599045118108-bf9954418b76.avif" alt="Servidores bajo amenaza ransomware">
+        </div>
+      </div>
+
+      <div class="ransomware-timeline">
+        <div class="timeline-step">
+          <div class="step-number">1</div>
+          <div class="step-card">
+            <div class="step-title">Fase 1: El Ingreso (Factor Humano)</div>
+            <p><strong>El evento:</strong> Se recibe un correo altamente personalizado simulando ser un proveedor
+              conocido.</p>
+            <p><strong>La falla:</strong> El usuario confía en la apariencia y hace clic en un enlace o adjunto sin
+              verificar el canal oficial.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-number">2</div>
+          <div class="step-card">
+            <div class="step-title">Fase 2: El Acceso Inicial y Ejecución (Resiliencia Tecnológica)</div>
+            <p><strong>El evento:</strong> Se ejecuta un script silencioso (payload) en la estación de trabajo del
+              usuario.</p>
+            <p><strong>La falla:</strong> Antivirus tradicional no detecta la amenaza día cero y el software carece de
+              parches actualizados.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-number">3</div>
+          <div class="step-card">
+            <div class="step-title">Fase 3: Movimiento Lateral y Persistencia (Procesos y Operación)</div>
+            <p><strong>El evento:</strong> El atacante recopila credenciales en RAM y se desplaza hacia servidores de
+              bases de datos críticas.</p>
+            <p><strong>La falla:</strong> Demora del SOC en detectar el comportamiento anómalo y falta de segmentación
+              de red interna.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-number">4</div>
+          <div class="step-card">
+            <div class="step-title">Fase 4: Evasión de Respaldos (Procesos y Terceros)</div>
+            <p><strong>El evento:</strong> El atacante neutraliza la capacidad de recuperación antes de detonar el
+              cifrado.</p>
+            <p><strong>La falla:</strong> Los respaldos (backups) estaban conectados a la misma red y fueron eliminados
+              o cifrados primero.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-number" style="background: #dc2626;">5</div>
+          <div class="step-card" style="border-left: 4px solid #dc2626;">
+            <div class="step-title" style="color: #dc2626;">Fase 5: El Efecto Final (Impacto Logrado por el Atacante)
+            </div>
+            <p><strong>El evento:</strong> Cifrado masivo de servidores y equipos, exfiltración previa de gigabytes de
+              datos confidenciales (extorsión triple).</p>
+            <p><strong>Paralización:</strong> Imposibilidad de atender pacientes de manera fluida, pérdidas económicas,
+              daño reputacional grave e investigación ANCI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LÁMINA 14 ==================== -->
+    <section class="slide" id="slide-14"
+      data-speaker-notes="&quot;Para concluir esta presentación, es fundamental sintetizar una realidad que enfrentan las instituciones de salud: si bien los recursos tecnológicos y presupuestarios no siempre son los ideales o de última generación, existe un espacio de protección inmensamente valioso en las conductas del personal. El factor humano no debe verse únicamente como un punto de vulnerabilidad, sino como la primera línea de defensa activa y consciente. Cuando un funcionario duda antes de hacer clic, reporta una anomalía dentro de las 3 horas reglamentarias y mantiene una higiene digital rigurosa, compensa las brechas de la infraestructura y salvaguarda la vida y los datos de nuestros pacientes.&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Parte 6 • Conclusiones Institucionales</span>
+          <h1 class="slide-h1">El Factor Humano como la Barrera Más Efectiva de Protección</h1>
+          <p class="slide-subtitle">Resiliencia Operacional: Superando la Brecha Tecnológica mediante Conductas Conscientes</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/photo-1516574187841-cb9cc2ca948b.avif" alt="Cultura de Ciberseguridad Hospitalaria" onerror="this.src='logo.png'">
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 10px;">
+        
+        <!-- Tarjeta 1: La Realidad de la Infraestructura -->
+        <div class="practice-item" style="background: rgba(255, 255, 255, 0.9); border-left: 5px solid #0d47a1; padding: 22px; border-radius: var(--radius-md); box-shadow: var(--shadow-soft);">
+          <h3 style="color: #0d47a1; font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <span>💻</span> La Brecha Tecnológica y sus Limitaciones
+          </h3>
+          <p style="font-size: 1.05rem; line-height: 1.6; color: var(--color-text-main); margin-bottom: 12px;">
+            En el sector salud público, la tecnología enfrenta desafíos reales: presupuestos ajustados, sistemas heredados (<em>legacy</em>) y heterogeneidad de herramientas de protección.
+          </p>
+          <div style="background: rgba(13, 71, 161, 0.08); padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(13, 71, 161, 0.15); font-size: 0.98rem; color: #0a367c; line-height: 1.5;">
+            ⚠️ <strong>Premisa Clave:</strong> La tecnología es una capa de control indispensable, pero por sí sola <strong>nunca es 100% infalible</strong> ni suficiente si las barreras de conducta fallan.
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: El Cortafuegos Humano -->
+        <div class="practice-item" style="background: rgba(255, 255, 255, 0.9); border-left: 5px solid #00a896; padding: 22px; border-radius: var(--radius-md); box-shadow: var(--shadow-soft);">
+          <h3 style="color: #0f766e; font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <span>🛡️</span> El "Cortafuegos Humano": La Defensa Decisiva
+          </h3>
+          <p style="font-size: 1.05rem; line-height: 1.6; color: var(--color-text-main); margin-bottom: 12px;">
+            Las conductas de los usuarios representan la línea de defensa más ágil y efectiva para neutralizar ciberamenazas antes de que penetren en la red hospitalaria.
+          </p>
+          <div style="background: rgba(0, 168, 150, 0.08); padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(0, 168, 150, 0.2); font-size: 0.98rem; color: #0f766e; line-height: 1.5;">
+            ✅ <strong>Espacio de Protección:</strong> Una actitud vigilante y un reporte oportuno compensan cualquier brecha de infraestructura o retraso en parches de software.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner de Pilares de Conducta Resiliente -->
+      <div style="margin-top: 20px; background: linear-gradient(135deg, rgba(13, 71, 161, 0.06) 0%, rgba(0, 168, 150, 0.08) 100%); border: 1px solid rgba(0, 168, 150, 0.25); border-radius: var(--radius-md); padding: 20px; box-shadow: var(--shadow-soft);">
+        <h4 style="font-family: var(--font-heading); color: var(--color-navy-dark); font-size: 1.15rem; margin-bottom: 14px; text-align: center;">
+          🚀 Tres Conductas Clave que Transforman la Seguridad del Hospital
+        </h4>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+          
+          <div style="background: #ffffff; padding: 14px; border-radius: 10px; border-top: 3px solid #7e57c2; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div style="font-size: 1.5rem; margin-bottom: 4px;">🧐</div>
+            <strong style="color: #6b21a8; font-size: 1rem; display: block; margin-bottom: 4px;">Criterio y Pausa Digital</strong>
+            <span style="font-size: 0.9rem; color: #475569; line-height: 1.4; display: block;">Dudar antes de hacer clic y verificar la fuente neutraliza el 90% de los engaños por Phishing.</span>
+          </div>
+
+          <div style="background: #ffffff; padding: 14px; border-radius: 10px; border-top: 3px solid #00a896; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div style="font-size: 1.5rem; margin-bottom: 4px;">⏱️</div>
+            <strong style="color: #0f766e; font-size: 1rem; display: block; margin-bottom: 4px;">Reporte Oportuno ANCI</strong>
+            <span style="font-size: 0.9rem; color: #475569; line-height: 1.4; display: block;">Alertar anomalías en minutos activa la respuesta del SOC y cumple la ventana legal de 3 horas.</span>
+          </div>
+
+          <div style="background: #ffffff; padding: 14px; border-radius: 10px; border-top: 3px solid #0d47a1; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div style="font-size: 1.5rem; margin-bottom: 4px;">🔐</div>
+            <strong style="color: #1e40af; font-size: 1rem; display: block; margin-bottom: 4px;">Higiene de Identidad</strong>
+            <span style="font-size: 0.9rem; color: #475569; line-height: 1.4; display: block;">Uso estricto de credenciales personales con MFA, sin exponer claves en papeles ni redes sociales.</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Modales Pop-up Técnicos -->
+
+  <!-- MODAL IMAGEN FULLSCREEN ESTADÍSTICAS -->
+  <div class="modal-backdrop" id="modalImgEstadisticas" onclick="closeModal('modalImgEstadisticas')"
+    style="background: rgba(10, 25, 47, 0.92); backdrop-filter: blur(12px);">
+    <div class="modal-container"
+      style="max-width: 95vw; max-height: 95vh; padding: 0; background: transparent; border: none; box-shadow: none; display: flex; flex-direction: column; align-items: center; justify-content: center;"
+      onclick="event.stopPropagation();">
+      <div style="position: absolute; top: 15px; right: 25px; z-index: 10000;">
+        <button class="modal-close-btn" onclick="closeModal('modalImgEstadisticas')"
+          style="background: #dc2626; color: #fff; border-radius: 50%; width: 48px; height: 48px; font-size: 2rem; line-height: 1; border: 2px solid #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.5); cursor: pointer;">&times;</button>
+      </div>
+      <div
+        style="max-width: 92vw; max-height: 84vh; overflow: hidden; border-radius: 16px; box-shadow: 0 25px 60px rgba(0,0,0,0.6); border: 3px solid rgba(255,255,255,0.9);">
+        <img src="imagenes/estadisticas.jpg" onerror="this.src='imagenes/estadisticas.png'"
+          alt="Estadísticas Completa a Pantalla Completa"
+          style="width: 100%; height: 100%; object-fit: contain; max-height: 84vh; display: block;">
+      </div>
+      <p
+        style="color: #ffffff; margin-top: 14px; font-size: 1.15rem; font-family: var(--font-body); font-weight: 500; text-shadow: 0 2px 4px rgba(0,0,0,0.9); background: rgba(0,0,0,0.7); padding: 8px 24px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.2);">
+        🔍 Haz clic en el botón [ X ] superior o presiona ESC para cerrar y volver a la Lámina 1
+      </p>
+    </div>
+  </div>
+
+  <!-- POPUP ESTADÍSTICAS ENRIQUECIDO -->
+  <div class="modal-backdrop" id="modalEstadisticas">
+    <div class="modal-container" style="max-width: 1100px; max-height: 90vh; overflow-y: auto; background: #0f172a; color: #f8fafc; border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);">
+      <div class="modal-header" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 20px 24px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10;">
+        <div>
+          <div class="modal-title" style="font-size: 1.4rem; font-weight: 700; color: #38bdf8; font-family: var(--font-heading, sans-serif); display: flex; align-items: center; gap: 10px;">
+            <span>📊</span> Panorama Global y Nacional de Ciberseguridad: Estadísticas Críticas
+          </div>
+          <div style="font-size: 0.88rem; color: #94a3b8; margin-top: 4px;">
+            Reporte consolidado de fuentes internacionales y nacionales (IBM, ENISA, ANCI Chile, Verizon DBIR, CIPER, Stanford, Entel Digital, CPR)
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modalEstadisticas')" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); width: 36px; height: 36px; border-radius: 50%; font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding: 24px; display: flex; flex-direction: column; gap: 28px;">
+        
+        <!-- RESUMEN EJECUTIVO INTRODUCTORIO -->
+        <div style="background: linear-gradient(90deg, rgba(30,58,138,0.4) 0%, rgba(15,23,42,0.6) 100%); border-left: 4px solid #3b82f6; padding: 16px 20px; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; color: #e2e8f0;">
+          💡 <strong>Resumen Ejecutivo:</strong> Este compendio evidencia el impacto económico del cibercrimen, el crecimiento de ataques impulsados por Inteligencia Artificial y la situación crítica de ciberseguridad en Chile con foco en el sector salud y la infraestructura pública.
+        </div>
+
+        <!-- SECCIÓN 1: COSTOS Y BRECHAS DE DATOS -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(239, 68, 68, 0.3); padding-bottom: 8px;">
+            <span style="font-size: 1.3rem;">🚨</span>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: #fca5a5; margin: 0; font-family: var(--font-heading, sans-serif);">
+              1. COSTOS Y BRECHAS DE DATOS (GLOBAL Y SECTOR SALUD)
+            </h3>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px;">
+
+            <!-- Tarjeta 1.1 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #f87171; font-size: 1.05rem; font-weight: 600; margin: 0;">💰 Costos Globales vs. Salud</h4>
+                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);">IBM Report 2025</span>
+              </div>
+              <div style="display: flex; gap: 12px; margin: 12px 0;">
+                <div style="flex: 1; background: rgba(15, 23, 42, 0.6); padding: 10px; border-radius: 8px; text-align: center;">
+                  <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">Promedio Global</div>
+                  <div style="font-size: 1.25rem; font-weight: 800; color: #cbd5e1; margin-top: 2px;">USD 4,44M</div>
+                </div>
+                <div style="flex: 1; background: rgba(153, 27, 27, 0.3); padding: 10px; border-radius: 8px; text-align: center; border: 1px solid rgba(239, 68, 68, 0.4);">
+                  <div style="font-size: 0.75rem; color: #fca5a5; text-transform: uppercase;">Sector Salud</div>
+                  <div style="font-size: 1.25rem; font-weight: 800; color: #f87171; margin-top: 2px;">USD 7,42M</div>
+                </div>
+              </div>
+              <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
+                Cifras del reporte <em>"Cost of a Data Breach Report 2025"</em> de IBM, correspondientes a incidentes ocurridos entre <strong>marzo de 2024 y febrero de 2025</strong>.
+              </p>
+            </div>
+
+            <!-- Tarjeta 1.2 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #f87171; font-size: 1.05rem; font-weight: 600; margin: 0;">📈 Costo Máximo en Salud</h4>
+                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);">Breach Stats / HIPAA 2026</span>
+              </div>
+              <div style="background: rgba(153, 27, 27, 0.25); padding: 10px 14px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #ef4444;">
+                <div style="font-size: 1.35rem; font-weight: 800; color: #fca5a5;">USD 11,2 Millones</div>
+                <div style="font-size: 0.8rem; color: #f87171; margin-top: 2px;">Costo máximo histórico citado a julio de 2026 en <em>CyberSecurity Breach Statistics</em>.</div>
+              </div>
+              <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
+                Asimismo, <em>The HIPAA Journal</em> proyecta un costo sectorial de <strong>USD 6,64 millones</strong> para 2026.
+              </p>
+            </div>
+
+            <!-- Tarjeta 1.3 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #f87171; font-size: 1.05rem; font-weight: 600; margin: 0;">🏥 Frecuencia en Salud & Inactividad</h4>
+                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);">Frost & Sullivan / BlackFog</span>
+              </div>
+              <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.55;">
+                <li><strong>90% de afectados:</strong> Estudio de Frost & Sullivan evidencia que el 90% de los recintos de salud fueron afectados en los últimos 3 años.</li>
+                <li><strong>27 Ataques en Enero 2026:</strong> Registrados en el sector salud en el informe <em>"The State of Ransomware: January 2026"</em> por BlackFog.</li>
+                <li><strong>279 Días de inactividad:</strong> Promedio global para identificar y contener una brecha de datos (IBM 2025).</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECCIÓN 2: ESTADÍSTICAS GENERALES DE CIBERATAQUES E INGENIERÍA SOCIAL -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(56, 189, 248, 0.3); padding-bottom: 8px;">
+            <span style="font-size: 1.3rem;">🌐</span>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: #38bdf8; margin: 0; font-family: var(--font-heading, sans-serif);">
+              2. ESTADÍSTICAS GENERALES DE CIBERATAQUES E INGENIERÍA SOCIAL (INTERNACIONAL)
+            </h3>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px;">
+
+            <!-- Tarjeta 2.1 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 600; margin: 0;">🎣 Phishing & Shadow AI</h4>
+                <span style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">IBM 2025</span>
+              </div>
+              <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.55;">
+                <li><strong>Vector de Acceso (16%):</strong> El Phishing representa el 16% de las puertas de entrada iniciales en incidentes entre 2024 y 2025.</li>
+                <li><strong>Shadow AI (20% de brechas):</strong> El uso no autorizado de IA causa el 20% de brechas con sobrecostos de <strong>USD $200.000 a USD $670.000</strong>.</li>
+              </ul>
+            </div>
+
+            <!-- Tarjeta 2.2 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 600; margin: 0;">🇪🇺 Amenazas en Europa</h4>
+                <span style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">ENISA 2025</span>
+              </div>
+              <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0 0 6px 0;">
+                Datos del <em>"ENISA Threat Landscape 2025"</em> (1 julio 2024 al 30 junio 2025):
+              </p>
+              <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.55;">
+                <li><strong>76,7% DDoS:</strong> Ataques dirigidos a infraestructuras críticas europeas.</li>
+                <li><strong>60% Phishing & Vulnerabilidades:</strong> Origen principal de incidentes en la UE.</li>
+              </ul>
+            </div>
+
+            <!-- Tarjeta 2.3 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 600; margin: 0;">👤 Cadena de Suministro & Factor Humano</h4>
+                <span style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">Verizon DBIR / Stanford</span>
+              </div>
+              <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.55;">
+                <li><strong>Cadena de Suministro (30%):</strong> Ataques vía proveedores (IBM / Verizon DBIR 2025). Ransomware afecta al <strong>44%</strong>.</li>
+                <li><strong>Factor Humano (68% - 95%):</strong> 68% en Verizon DBIR 2025 y 88% atribuible a error humano según la <em>Universidad de Stanford</em>.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECCIÓN 3: ESTADÍSTICAS EN CHILE (SECTOR SALUD) -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(168, 85, 247, 0.3); padding-bottom: 8px;">
+            <span style="font-size: 1.3rem;">🇨🇱</span>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: #c084fc; margin: 0; font-family: var(--font-heading, sans-serif);">
+              3. ESTADÍSTICAS EN CHILE (SECTOR SALUD)
+            </h3>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px;">
+
+            <!-- Tarjeta 3.1 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #c084fc; font-size: 1.05rem; font-weight: 600; margin: 0;">📁 Vulnerabilidad Minsal</h4>
+                <span style="background: rgba(168, 85, 247, 0.2); color: #e9d5ff; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.4);">Investigación CIPER</span>
+              </div>
+              <div style="background: rgba(88, 28, 135, 0.3); padding: 8px 12px; border-radius: 8px; margin: 8px 0; border: 1px solid rgba(168, 85, 247, 0.3);">
+                <span style="font-size: 1.25rem; font-weight: 800; color: #f0abfc;">3 Millones de Archivos</span>
+              </div>
+              <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
+                Investigación publicada por CIPER el <strong>5 de marzo de 2016</strong>: reportó accesos no autorizados a carpetas compartidas sin seguridad entre 2012 y 2015.
+              </p>
+            </div>
+
+            <!-- Tarjeta 3.2 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #c084fc; font-size: 1.05rem; font-weight: 600; margin: 0;">🏥 Ransomware a Salud Nacional</h4>
+                <span style="background: rgba(168, 85, 247, 0.2); color: #e9d5ff; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.4);">Ransomware.live</span>
+              </div>
+              <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
+                Casos como el ataque a <strong>Clínica Dávila</strong> (víctima del grupo criminal <em>Devman</em>) y otros hospitales nacionales registrados en el monitor en tiempo real <em>Ransomware.live</em> entre <strong>diciembre de 2025 y mediados de 2026</strong>.
+              </p>
+            </div>
+
+            <!-- Tarjeta 3.3 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #c084fc; font-size: 1.05rem; font-weight: 600; margin: 0;">🗝️ Credenciales e Intervención ANCI</h4>
+                <span style="background: rgba(168, 85, 247, 0.2); color: #e9d5ff; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.4);">Oficio Secreto ANCI</span>
+              </div>
+              <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
+                Detallado en el documento <em>"El Ecosistema de las Ciberamenazas Globales y su Impacto en la Infraestructura de Salud Pública en Chile"</em>, citando un <strong>Oficio Secreto de la Agencia Nacional de Ciberseguridad (ANCI)</strong> emitido en <strong>mayo de 2026</strong>.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECCIÓN 4: ESTADÍSTICAS EN CHILE (GENERAL Y TRANSVERSAL) -->
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(245, 158, 11, 0.3); padding-bottom: 8px;">
+            <span style="font-size: 1.3rem;">📊</span>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: #fbbf24; margin: 0; font-family: var(--font-heading, sans-serif);">
+              4. ESTADÍSTICAS EN CHILE (GENERAL Y TRANSVERSAL)
+            </h3>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+
+            <!-- Tarjeta 4.1 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 600; margin: 0;">⚔️ Ataques Semanales</h4>
+                <span style="background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">Check Point Research</span>
+              </div>
+              <div style="background: rgba(180, 83, 9, 0.25); padding: 10px; border-radius: 8px; margin: 8px 0; text-align: center;">
+                <span style="font-size: 1.35rem; font-weight: 800; color: #fef08a;">1.706 ciberataques</span>
+                <div style="font-size: 0.75rem; color: #fcd34d;">semanales por empresa en Chile (Marzo 2026)</div>
+              </div>
+              <p style="font-size: 0.85rem; color: #cbd5e1; margin: 0;">Publicado en la Revista Seguridad & Defensa.</p>
+            </div>
+
+            <!-- Tarjeta 4.2 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 600; margin: 0;">🕵️ InfoStealers & Ransomware</h4>
+                <span style="background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">Entel Digital 2026</span>
+              </div>
+              <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.5;">
+                <li><strong>169.310 Equipos Comprometidos:</strong> Infecciones por InfoStealers (+34% de alza frente a 2024).</li>
+                <li><strong>Qilin y Akira:</strong> Concentran el <strong>55%</strong> de los incidentes de ransomware en el país.</li>
+              </ul>
+            </div>
+
+            <!-- Tarjeta 4.3 -->
+            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 600; margin: 0;">👥 Percepción Directiva & Phishing</h4>
+                <span style="background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">UDP / AE / Prey</span>
+              </div>
+              <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.5;">
+                <li><strong>Riesgo Principal #1:</strong> 54,6% de directivos sufrieron incidentes en los últimos 12 meses (Estudio AE y UDP 2026).</li>
+                <li><strong>Prey Project (2024):</strong> Phishing subió <strong>40%</strong> y <strong>55%</strong> de organizaciones fueron víctimas de ransomware.</li>
+              </ul>
+            </div>
+
+            <!-- Tarjeta 4.4 (Ancho Completo) -->
+            <div style="grid-column: 1 / -1; background: linear-gradient(90deg, rgba(30,41,59,0.9) 0%, rgba(120,53,15,0.25) 100%); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 12px; padding: 18px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 700; margin: 0;">🏛️ Caída de Mercado Público (Ataque a IFX Networks)</h4>
+                <span style="background: rgba(245, 158, 11, 0.2); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.4);">ISCI & U. de Chile (2024)</span>
+              </div>
+              <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+                <div style="background: rgba(15, 23, 42, 0.8); padding: 10px 16px; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                  <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase;">Impacto en Transacciones</div>
+                  <div style="font-size: 1.3rem; font-weight: 800; color: #fbbf24;">$150.000 Millones CLP</div>
+                </div>
+                <div style="flex: 1; font-size: 0.88rem; color: #cbd5e1; line-height: 1.5;">
+                  El ciberataque al proveedor IFX Networks (ocurrido entre el 12 y 19 de septiembre de 2023) paralizó el portal de compras estatales, forzando transacciones de contingencia manual. Los datos de impacto fueron consolidados en el informe final por el Instituto de Sistemas Complejos de Ingeniería (ISCI) y la Universidad de Chile (publicado en <strong>abril de 2024</strong>).
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- POPUP 1 -->
+  <div class="modal-backdrop" id="modalPop1">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title">💬 Pop-up Interactivo 1: Detalle Normativo Ley N° 21.663 y Decreto N° 295</div>
+        <button class="modal-close-btn" onclick="closeModal('modalPop1')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>Gobernanza y Sanciones Legales (ANCI)</h4>
+        <ul>
+          <li><strong>Art. 4° y 8° (Ley N° 21.663):</strong> Obliga a implementar un Sistema de Gestión de Seguridad de
+            la Información (SGSI) permanente, realizar revisión continua de redes/endpoints y mantener planes de
+            continuidad probados.</li>
+          <li><strong>Proceso de Reporte Escalonado (Decreto N° 295 / ANCI):</strong>
+            <ol style="padding-left: 20px; margin-top: 8px;">
+              <li><em>Alerta Temprana:</em> Notificación inicial a la ANCI en un plazo máximo de <strong>3
+                  horas</strong> tras la detección del incidente.</li>
+              <li><em>Actualización de Estado:</em> Informe de avance a las <strong>72 horas</strong>.</li>
+              <li><em>Informe Final:</em> Cierre de análisis de causa raíz y mitigación a los <strong>15 días
+                  corridos</strong>.</li>
+            </ol>
+          </li>
+          <li><strong>Régimen Sancionatorio (Art. 38):</strong> El incumplimiento de las directivas de ciberseguridad o
+            la omisión del reporte de incidentes significativos conlleva multas gravísimas para la institución y
+            responsabilidades administrativas directas para los involucrados.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- POPUP 2 -->
+  <div class="modal-backdrop" id="modalPop2">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title">💬 Pop-up Interactivo 2: Detalle Normativo Ley N° 21.719 y Ley N° 20.584</div>
+        <button class="modal-close-btn" onclick="closeModal('modalPop2')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>Bases de Licitud y Gestión de Privacidad de Salud</h4>
+        <ul>
+          <li><strong>Protección de Datos Sensibles (Ley N° 21.719):</strong> Los datos clínicos, biológicos y de
+            identificación son de categoría sensible. Su procesamiento no autorizado constituye una infracción legal
+            grave.</li>
+          <li><strong>Derechos ARCOP:</strong> Modifica la Ley N° 19.628 e introduce formalmente los derechos de Acceso,
+            Rectificación, Supresión (Cancelación), Oposición y Portabilidad de datos para los titulares.</li>
+          <li><strong>Delegado de Protección de Datos (DPO):</strong> Exige la designación formal de un DPO con
+            autonomía funcional ante la Agencia de Protección de Datos Personales.</li>
+          <li><strong>Propiedad de la Ficha Clínica (Ley N° 20.584 / Ley N° 21.668):</strong> La ficha médica pertenece
+            al paciente. El personal sólo tiene autorización de acceso respecto de pacientes bajo su relación
+            terapéutica directa o función administrativa habilitada. Todo acceso fuera de este margen se audita como
+            infracción de confidencialidad.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- POPUP 3 -->
+  <div class="modal-backdrop" id="modalPop3">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title">💬 Pop-up Interactivo 3: Detalle de Instructivos MINSAL y Normativa Complementaria
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modalPop3')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4>Controles Operativos y Contratos del Sector Salud (MINSAL)</h4>
+        <ul>
+          <li><strong>Instructivo ITS-NC-007 v2.0:</strong> Exige la aplicación de la norma NCh-ISO/IEC 27001, obligando
+            al uso de credenciales individuales, rotación periódica de contraseñas complejas (mínimo 12 caracteres) y la
+            habilitación de MFA para todo acceso a datos sensibles.</li>
+          <li><strong>Instructivo ITS-NC-006 / Res. Exenta N° 850:</strong> Obliga a incluir anexos y cláusulas de
+            ciberseguridad y protección de datos en todas las compras y convenios con proveedores de software o
+            equipamiento tecnológico. Exige a los terceros notificar vulnerabilidades e incidentes en tiempos
+            compatibles con la ANCI.</li>
+          <li><strong>Instrucción General N° 4 (ANCI):</strong> Ante sospecha de compromiso de credenciales o ataque,
+            mandata el aislamiento inmediato a nivel de red (EDR/MDR) y la revocación de la sesión para evitar
+            desplazamientos laterales dentro del perímetro hospitalario.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL OVERVIEW -->
+  <div class="modal-backdrop" id="overviewModal">
+    <div class="modal-container" style="max-width: 1000px;">
+      <div class="modal-header">
+        <div class="modal-title">🗺️ Índice / Selector General de Diapositivas</div>
+        <button class="modal-close-btn" onclick="closeModal('overviewModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="overview-grid" id="overviewGrid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel Guion del Expositor (Speaker Notes Drawer) -->
+  <div class="speaker-notes-drawer" id="speakerNotesDrawer">
+    <div class="notes-header">🎙️ Guion del Expositor (Notas en Vivo)</div>
+    <div class="notes-content" id="speakerNotesContent">
+      Cargando notas...
+    </div>
+  </div>
+
+  <!-- Toolbar Inferior de Navegación -->
+  <footer class="app-toolbar">
+    <div class="toolbar-controls">
+      <button class="nav-btn" id="prevBtn" disabled>◄ Anterior</button>
+      <button class="nav-btn" id="nextBtn">Siguiente ►</button>
+      <button class="tool-btn" id="overviewToggle">🗺️ Índice</button>
+    </div>
+
+    <div class="toolbar-controls">
+      <button class="tool-btn" id="speakerNotesToggle">🎙️ Guion del Expositor (G)</button>
+      <button class="tool-btn" id="fontScaleToggle">🔍 Texto Base (Grande)</button>
+      <button class="tool-btn" id="fullscreenToggle">⛶ Pantalla Completa (F)</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
