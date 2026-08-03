@@ -231,4 +231,21 @@ Al unificar estas cuatro dimensiones en un reporte o *dashboard*, podrás respon
 * **Guion del Expositor:**  
 * *"Para concluir nuestra presentación, debemos sintetizar una premisa fundamental: si bien reconocemos que los recursos tecnológicos e infraestructura en la salud pública no siempre son los ideales ni de última generación, existe un espacio de protección decisivo en la conducta de cada uno de nosotros. El factor humano no es solo una potencial vulnerabilidad; es el cortafuegos más efectivo del hospital. Cuando un funcionario se detiene a verificar un correo dudoso, reporta una anomalía dentro del plazo de 3 horas y cuida sus credenciales, compensa las limitaciones técnicas y garantiza la continuidad asistencial y la seguridad de nuestros pacientes."*
 
+---
+
+## **BONUS TRACK: INTELIGENCIA ARTIFICIAL 2026 (SLIDE 15)**
+
+### **📄 Diapositiva 15: Bonus Track AI - Evolución y Aceleración de Modelos de IA (2023 vs. 2026)**
+
+* **Título:** Evolución y Aceleración de Modelos de IA (2023 vs. 2026)  
+* **Subtítulo:** Matriz Comparativa de Ciclos de Vida, Datos Sintéticos y Parches de Capacidades  
+* **Tabla Comparativa de Análisis:**  
+  * **Ciclo de vida del modelo insignia:** 12 - 18 meses (2023) ➔ **3 - 5 meses (2026)** | *Informes de la industria sobre iteraciones continuas y despliegues acelerados (ej. OpenAI o3/GPT-5, Anthropic Claude 3.5/5 y Google Gemini 2.5/3.6).*  
+  * **Proporción de datos sintéticos en entrenamiento:** < 10% (2023) ➔ **45% - 60% (2026)** | *Investigación en Data Scaling Laws y arquitecturas como Microsoft Phi o DeepSeek con destilación.*  
+  * **Dependencia de código auto-generado para reentrenamiento:** Baja < 20% (2023) ➔ **Alta > 50% (2026)** | *Reportes de adopción de pipelines de retroalimentación sintética (RLAIF y Distillation Pipelines como Distilabel).*  
+  * **Frecuencia de parches de capacidades (Fine-tuning/RLHF):** Esporádica (2023) ➔ **Continua semanal/mensual vía API (2026)** | *Lanzamientos incrementales de APIs comerciales y despliegues de razonamiento en tiempo de inferencia.*  
+* **Guion del Expositor:**  
+* *"Como módulo complementario o Bonus Track, observamos la aceleración vertiginosa del ecosistema de Inteligencia Artificial entre 2023 y 2026. Los ciclos de desarrollo de modelos insignia se redujeron de más de un año a tan solo meses. La generación de datos sintéticos pasó de ser marginal a constituir más del 50% del volumen de entrenamiento, y la actualización de capacidades pasó de ser esporádica a un proceso continuo semanal vía API. Esta velocidad de transformación impacta directamente los vectores de amenaza y las herramientas de defensa digital."*
+
+
 
