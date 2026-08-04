@@ -38,8 +38,91 @@
   <!-- Viewport de Presentación Principal -->
   <main class="presentation-viewport">
 
+    <!-- ==================== LÁMINA INICIAL (PRE-PRESENTACIÓN / INTERACCIÓN) ==================== -->
+    <section class="slide active" id="slide-0"
+      data-speaker-notes="&quot;Bienvenidos. Antes de iniciar la presentación , te invito a participar de un breve cuestionario .&quot;">
+      <div class="slide-title-group-with-image">
+        <div>
+          <span class="slide-tag">Pre-Presentación • Interacción Inicial</span>
+          <h1 class="slide-h1">¿Nos acompañas respondiendo unas preguntas previas?</h1>
+          <p class="slide-subtitle">Antes de comenzar la sesión, te invito a responder unas sencillas preguntas a través
+            de tu celular.</p>
+        </div>
+        <div class="cinematic-title-thumbnail">
+          <img src="imagenes/photo-1584433144859-1fc3ab64a957.avif" alt="Participación Digital">
+        </div>
+      </div>
+
+      <div class="slide-grid-2">
+        <div class="fluid-card fluid-card-teal">
+          <div class="card-header">
+            <div class="card-icon card-icon-teal">📊</div>
+            <h2 class="card-h2">Encuesta Interactiva Previa</h2>
+          </div>
+          <div class="card-body">
+            <ul class="feature-list">
+              <li class="feature-item">
+                <span class="feature-bullet">1</span>
+                <div>
+                  <strong>Participación desde tu Móvil:</strong> Preguntas breves para conocer las impresiones y
+                  conocimientos del auditorio antes de la sesión.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">2</span>
+                <div>
+                  <strong>Código QR en Pantalla:</strong> Al abrir el enlace del presentador, se desplegará el código QR
+                  en la pantalla para que todos puedan escanearlo.
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-bullet">3</span>
+                <div>
+                  <strong>Resultados en Tiempo Real:</strong> Las respuestas se visualizarán en vivo antes de iniciar
+                  las láminas principales.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fluid-card fluid-card-purple"
+          style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div class="card-header">
+              <div class="card-icon card-icon-lavender">💡</div>
+              <h2 class="card-h2">Inicio de la Dinámica</h2>
+            </div>
+            <div class="card-body">
+              <p
+                style="font-size: calc(1.15rem * var(--font-scale)); line-height: 1.6; color: var(--color-text-muted); margin-bottom: 20px;">
+                Esta actividad previa permite abrir la discusión y contextualizar los desafíos de ciberseguridad y
+                protección de datos en la institución.
+              </p>
+            </div>
+          </div>
+
+          <div class="presenter-access-bar"
+            style="margin-top: auto; padding-top: 15px; border-top: 1px dashed rgba(126, 87, 194, 0.25);">
+            <span class="presenter-label"
+              style="font-size: 0.85rem; color: var(--color-text-muted); font-style: italic;">Enlace para el
+              presentador:</span>
+            <a href="https://presenter.ahaslides.com/pages/login?redirect=%2Fpresentation%2F9771772" target="_blank"
+              rel="noopener noreferrer" class="btn-presenter-small" style="font-size: 0.85rem; padding: 5px 12px;">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Abrir Presentación Interactiva (AhaSlides)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ==================== LÁMINA 1 (NUEVA: ESTADÍSTICAS Y PANORAMA) ==================== -->
-    <section class="slide active" id="slide-1"
+    <section class="slide" id="slide-1"
       data-speaker-notes="&quot;Bienvenidos. Iniciamos esta sesión analizando el panorama global de ciberseguridad y el impacto real de las brechas de datos en el sector salud. Las estadísticas globales revelan que un ataque a una institución sanitaria genera costos superiores a los 11 millones de dólares y que en el 95% de los casos el factor humano es determinante. Revisa el detalle estadístico interactivo en el botón a continuación.&quot;">
       <div class="slide-title-group-with-image">
         <div>
@@ -737,7 +820,11 @@
           <div class="killchain-formal">Nombre Formal: Reconocimiento / Recopilación de Inteligencia</div>
           <p><strong>Qué ocurre:</strong> Recopilación de información pública o expuesta sobre la organización
             (empleados, tecnologías, IPs o paneles de acceso).</p>
-          <p style="margin-top: 6px; color: var(--color-navy-dark);"><strong>Caso Hospitalario:</strong> Identificación de accesos remotos expuestos (VPN, SSH o portales web), alimentada por conductas vulnerables del personal: credenciales visibles o anotadas en el puesto de trabajo, uso del correo institucional en sitios personales comprometidos por brechas de datos o publicación de fotos en redes sociales exponiendo pantallas y usuarios del hospital.</p>
+          <p style="margin-top: 6px; color: var(--color-navy-dark);"><strong>Caso Hospitalario:</strong> Identificación
+            de accesos remotos expuestos (VPN, SSH o portales web), alimentada por conductas vulnerables del personal:
+            credenciales visibles o anotadas en el puesto de trabajo, uso del correo institucional en sitios personales
+            comprometidos por brechas de datos o publicación de fotos en redes sociales exponiendo pantallas y usuarios
+            del hospital.</p>
         </div>
 
         <div class="killchain-card">
@@ -894,70 +981,96 @@
     <!-- ==================== LÁMINA 14 ==================== -->
     <section class="slide" id="slide-14"
       data-speaker-notes="&quot;Para concluir esta presentación, es fundamental sintetizar una realidad que enfrentan las instituciones de salud: si bien los recursos tecnológicos y presupuestarios no siempre son los ideales o de última generación, existe un espacio de protección inmensamente valioso en las conductas del personal. El factor humano no debe verse únicamente como un punto de vulnerabilidad, sino como la primera línea de defensa activa y consciente. Cuando un funcionario duda antes de hacer clic, reporta una anomalía dentro de las 3 horas reglamentarias y mantiene una higiene digital rigurosa, compensa las brechas de la infraestructura y salvaguarda la vida y los datos de nuestros pacientes.&quot;">
-      <div class="slide-title-group-with-image">
+      <div class="slide-title-group-with-image" style="margin-bottom: 12px;">
         <div>
           <span class="slide-tag">Parte 6 • Conclusiones Institucionales</span>
           <h1 class="slide-h1">El Factor Humano como la Barrera Más Efectiva de Protección</h1>
-          <p class="slide-subtitle">Resiliencia Operacional: Superando la Brecha Tecnológica mediante Conductas Conscientes</p>
+          <p class="slide-subtitle">Resiliencia Operacional: Superando la Brecha Tecnológica mediante Conductas
+            Conscientes</p>
         </div>
         <div class="cinematic-title-thumbnail">
-          <img src="imagenes/photo-1516574187841-cb9cc2ca948b.avif" alt="Cultura de Ciberseguridad Hospitalaria" onerror="this.src='logo.png'">
+          <img src="imagenes/photo-1516574187841-cb9cc2ca948b.avif" alt="Cultura de Ciberseguridad Hospitalaria"
+            onerror="this.src='logo.png'">
         </div>
       </div>
 
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 10px;">
-        
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 4px;">
+
         <!-- Tarjeta 1: La Realidad de la Infraestructura -->
-        <div class="practice-item" style="background: rgba(255, 255, 255, 0.9); border-left: 5px solid #0d47a1; padding: 22px; border-radius: var(--radius-md); box-shadow: var(--shadow-soft);">
-          <h3 style="color: #0d47a1; font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+        <div class="practice-item"
+          style="background: rgba(255, 255, 255, 0.9); border-left: 5px solid #0d47a1; padding: 16px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-soft);">
+          <h3
+            style="color: #0d47a1; font-family: var(--font-heading); font-size: var(--h3-size); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
             <span>💻</span> La Brecha Tecnológica y sus Limitaciones
           </h3>
-          <p style="font-size: 1.05rem; line-height: 1.6; color: var(--color-text-main); margin-bottom: 12px;">
-            En el sector salud público, la tecnología enfrenta desafíos reales: presupuestos ajustados, sistemas heredados (<em>legacy</em>) y heterogeneidad de herramientas de protección.
+          <p style="font-size: var(--body-size); line-height: 1.5; color: var(--color-text-main); margin-bottom: 8px;">
+            En el sector salud público, la tecnología enfrenta desafíos reales: presupuestos ajustados, sistemas
+            heredados (<em>legacy</em>) y heterogeneidad de herramientas de protección.
           </p>
-          <div style="background: rgba(13, 71, 161, 0.08); padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(13, 71, 161, 0.15); font-size: 0.98rem; color: #0a367c; line-height: 1.5;">
-            ⚠️ <strong>Premisa Clave:</strong> La tecnología es una capa de control indispensable, pero por sí sola <strong>nunca es 100% infalible</strong> ni suficiente si las barreras de conducta fallan.
+          <div
+            style="background: rgba(13, 71, 161, 0.08); padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(13, 71, 161, 0.15); font-size: calc(var(--body-size) * 0.95); color: #0a367c; line-height: 1.45;">
+            ⚠️ <strong>Premisa Clave:</strong> La tecnología es una capa de control indispensable, pero por sí sola
+            <strong>nunca es 100% infalible</strong> ni suficiente si las barreras de conducta fallan.
           </div>
         </div>
 
         <!-- Tarjeta 2: El Cortafuegos Humano -->
-        <div class="practice-item" style="background: rgba(255, 255, 255, 0.9); border-left: 5px solid #00a896; padding: 22px; border-radius: var(--radius-md); box-shadow: var(--shadow-soft);">
-          <h3 style="color: #0f766e; font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+        <div class="practice-item"
+          style="background: rgba(255, 255, 255, 0.9); border-left: 5px solid #00a896; padding: 16px 20px; border-radius: var(--radius-md); box-shadow: var(--shadow-soft);">
+          <h3
+            style="color: #0f766e; font-family: var(--font-heading); font-size: var(--h3-size); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
             <span>🛡️</span> El "Cortafuegos Humano": La Defensa Decisiva
           </h3>
-          <p style="font-size: 1.05rem; line-height: 1.6; color: var(--color-text-main); margin-bottom: 12px;">
-            Las conductas de los usuarios representan la línea de defensa más ágil y efectiva para neutralizar ciberamenazas antes de que penetren en la red hospitalaria.
+          <p style="font-size: var(--body-size); line-height: 1.5; color: var(--color-text-main); margin-bottom: 8px;">
+            Las conductas de los usuarios representan la línea de defensa más ágil y efectiva para neutralizar
+            ciberamenazas antes de que penetren en la red hospitalaria.
           </p>
-          <div style="background: rgba(0, 168, 150, 0.08); padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(0, 168, 150, 0.2); font-size: 0.98rem; color: #0f766e; line-height: 1.5;">
-            ✅ <strong>Espacio de Protección:</strong> Una actitud vigilante y un reporte oportuno compensan cualquier brecha de infraestructura o retraso en parches de software.
+          <div
+            style="background: rgba(0, 168, 150, 0.08); padding: 10px 14px; border-radius: 8px; border: 1px solid rgba(0, 168, 150, 0.2); font-size: calc(var(--body-size) * 0.95); color: #0f766e; line-height: 1.45;">
+            ✅ <strong>Espacio de Protección:</strong> Una actitud vigilante y un reporte oportuno compensan cualquier
+            brecha de infraestructura o retraso en parches de software.
           </div>
         </div>
 
       </div>
 
       <!-- Banner de Pilares de Conducta Resiliente -->
-      <div style="margin-top: 20px; background: linear-gradient(135deg, rgba(13, 71, 161, 0.06) 0%, rgba(0, 168, 150, 0.08) 100%); border: 1px solid rgba(0, 168, 150, 0.25); border-radius: var(--radius-md); padding: 20px; box-shadow: var(--shadow-soft);">
-        <h4 style="font-family: var(--font-heading); color: var(--color-navy-dark); font-size: 1.15rem; margin-bottom: 14px; text-align: center;">
+      <div
+        style="margin-top: 12px; background: linear-gradient(135deg, rgba(13, 71, 161, 0.06) 0%, rgba(0, 168, 150, 0.08) 100%); border: 1px solid rgba(0, 168, 150, 0.25); border-radius: var(--radius-md); padding: 12px 16px; box-shadow: var(--shadow-soft);">
+        <h4
+          style="font-family: var(--font-heading); color: var(--color-navy-dark); font-size: calc(var(--h3-size) * 0.95); margin-bottom: 10px; text-align: center;">
           🚀 Tres Conductas Clave que Transforman la Seguridad del Hospital
         </h4>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
-          
-          <div style="background: #ffffff; padding: 14px; border-radius: 10px; border-top: 3px solid #7e57c2; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <div style="font-size: 1.5rem; margin-bottom: 4px;">🧐</div>
-            <strong style="color: #6b21a8; font-size: 1rem; display: block; margin-bottom: 4px;">Criterio y Pausa Digital</strong>
-            <span style="font-size: 0.9rem; color: #475569; line-height: 1.4; display: block;">Dudar antes de hacer clic y verificar la fuente neutraliza el 90% de los engaños por Phishing.</span>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+
+          <div
+            style="background: #ffffff; padding: 10px 12px; border-radius: 10px; border-top: 3px solid #7e57c2; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div style="font-size: 1.4rem; margin-bottom: 2px;">🧐</div>
+            <strong style="color: #6b21a8; font-size: var(--body-size); display: block; margin-bottom: 2px;">Criterio y
+              Pausa Digital</strong>
+            <span
+              style="font-size: calc(var(--body-size) * 0.9); color: #475569; line-height: 1.35; display: block;">Dudar
+              antes de hacer clic y verificar la fuente neutraliza el 90% de engaños.</span>
           </div>
 
-          <div style="background: #ffffff; padding: 14px; border-radius: 10px; border-top: 3px solid #00a896; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <div style="font-size: 1.5rem; margin-bottom: 4px;">⏱️</div>
-            <strong style="color: #0f766e; font-size: 1rem; display: block; margin-bottom: 4px;">Reporte Oportuno ANCI</strong>
-            <span style="font-size: 0.9rem; color: #475569; line-height: 1.4; display: block;">Alertar anomalías en minutos activa la respuesta del SOC y cumple la ventana legal de 3 horas.</span>
+          <div
+            style="background: #ffffff; padding: 10px 12px; border-radius: 10px; border-top: 3px solid #00a896; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div style="font-size: 1.4rem; margin-bottom: 2px;">⏱️</div>
+            <strong style="color: #0f766e; font-size: var(--body-size); display: block; margin-bottom: 2px;">Reporte
+              Oportuno ANCI</strong>
+            <span
+              style="font-size: calc(var(--body-size) * 0.9); color: #475569; line-height: 1.35; display: block;">Alertar
+              anomalías activa la respuesta del SOC y cumple el plazo de 3 horas.</span>
           </div>
 
-          <div style="background: #ffffff; padding: 14px; border-radius: 10px; border-top: 3px solid #0d47a1; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <div style="font-size: 1.5rem; margin-bottom: 4px;">🔐</div>
-            <strong style="color: #1e40af; font-size: 1rem; display: block; margin-bottom: 4px;">Higiene de Identidad</strong>
-            <span style="font-size: 0.9rem; color: #475569; line-height: 1.4; display: block;">Uso estricto de credenciales personales con MFA, sin exponer claves en papeles ni redes sociales.</span>
+          <div
+            style="background: #ffffff; padding: 10px 12px; border-radius: 10px; border-top: 3px solid #0d47a1; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+            <div style="font-size: 1.4rem; margin-bottom: 2px;">🔐</div>
+            <strong style="color: #1e40af; font-size: var(--body-size); display: block; margin-bottom: 2px;">Higiene de
+              Identidad</strong>
+            <span
+              style="font-size: calc(var(--body-size) * 0.9); color: #475569; line-height: 1.35; display: block;">Uso
+              estricto de credenciales personales con MFA, sin exponer claves.</span>
           </div>
 
         </div>
@@ -968,69 +1081,114 @@
     <!-- ==================== LÁMINA 15 ==================== -->
     <section class="slide" id="slide-15"
       data-speaker-notes="&quot;Para finalizar este bloque especial o Bonus Track, analizamos la aceleración exponencial en el desarrollo de la Inteligencia Artificial entre 2023 y 2026. Observamos cómo los ciclos de vida de los modelos insignia cayeron de 18 meses a apenas 3 a 5 meses, mientras que la generación de datos sintéticos pasó de ser marginal a representar hasta el 60% del entrenamiento. Además, la dependencia de código autogenerado supera el 50% y los parches de capacidades pasaron de ser esporádicos a actualizaciones continuas semanales vía API.&quot;">
-      <div class="slide-title-group-with-image">
+      <div class="slide-title-group-with-image" style="margin-bottom: 12px;">
         <div>
-          <span class="slide-tag" style="background: rgba(126, 87, 194, 0.15); color: #6b21a8; border: 1px solid rgba(126, 87, 194, 0.3);">🤖 Bonus Track • Inteligencia Artificial 2026</span>
+          <span class="slide-tag"
+            style="background: rgba(126, 87, 194, 0.15); color: #6b21a8; border: 1px solid rgba(126, 87, 194, 0.3);">🤖
+            Bonus Track • Inteligencia Artificial 2026</span>
           <h1 class="slide-h1">Evolución y Aceleración de Modelos de IA (2023 vs. 2026)</h1>
           <p class="slide-subtitle">Matriz Comparativa de Ciclos de Vida, Datos Sintéticos y Parches de Capacidades</p>
         </div>
         <div class="cinematic-title-thumbnail">
-          <img src="imagenes/premium_photo-1674669009418-2643aa58b11b.avif" alt="Bonus Track AI Evolución" onerror="this.src='logo.png'">
+          <img src="imagenes/premium_photo-1674669009418-2643aa58b11b.avif" alt="Bonus Track AI Evolución"
+            onerror="this.src='logo.png'">
         </div>
       </div>
 
-      <div style="margin-top: 14px; overflow-x: auto; background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); border: 1px solid rgba(13, 71, 161, 0.15); box-shadow: var(--shadow-soft); padding: 6px;">
-        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; font-family: var(--font-body);">
+      <div
+        style="margin-top: 4px; overflow-x: auto; background: rgba(255, 255, 255, 0.95); border-radius: var(--radius-md); border: 1px solid rgba(13, 71, 161, 0.15); box-shadow: var(--shadow-soft); padding: 4px;">
+        <table
+          style="width: 100%; border-collapse: collapse; text-align: left; font-size: calc(var(--body-size) * 0.95); font-family: var(--font-body);">
           <thead>
             <tr style="background: linear-gradient(135deg, #0d47a1 0%, #1e40af 100%); color: #ffffff;">
-              <th style="padding: 14px 16px; border-radius: 10px 0 0 0; font-weight: 700; width: 22%;">Variable de Análisis</th>
-              <th style="padding: 14px 16px; font-weight: 700; width: 18%; background: rgba(0,0,0,0.15);">Comportamiento Histórico (2023)</th>
-              <th style="padding: 14px 16px; font-weight: 700; width: 20%; background: rgba(0, 168, 150, 0.25); color: #6ee7b7;">Comportamiento Actual (2026)</th>
-              <th style="padding: 14px 16px; border-radius: 0 10px 0 0; font-weight: 700; width: 40%;">Fuentes / Referencias Técnicas</th>
+              <th
+                style="padding: 10px 14px; border-radius: 8px 0 0 0; font-weight: 700; width: 22%; font-size: var(--body-size);">
+                Variable de Análisis</th>
+              <th
+                style="padding: 10px 14px; font-weight: 700; width: 18%; background: rgba(0,0,0,0.15); font-size: var(--body-size);">
+                Comportamiento Histórico (2023)</th>
+              <th
+                style="padding: 10px 14px; font-weight: 700; width: 20%; background: rgba(0, 168, 150, 0.25); color: #6ee7b7; font-size: var(--body-size);">
+                Comportamiento Actual (2026)</th>
+              <th
+                style="padding: 10px 14px; border-radius: 0 8px 0 0; font-weight: 700; width: 40%; font-size: var(--body-size);">
+                Fuentes / Referencias Técnicas</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid rgba(0,0,0,0.08); background: rgba(255,255,255,0.7);">
-              <td style="padding: 14px 16px; font-weight: 600; color: var(--color-navy-dark);">⚡ Ciclo de vida del modelo insignia</td>
-              <td style="padding: 14px 16px; color: #64748b; font-weight: 600;">12 - 18 meses</td>
-              <td style="padding: 14px 16px; background: rgba(0, 168, 150, 0.06); font-weight: 800; color: #0f766e;">
-                <span style="background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 12px; font-size: 0.9rem; border: 1px solid #bae6fd;">3 - 5 meses</span>
+              <td
+                style="padding: 10px 14px; font-weight: 600; color: var(--color-navy-dark); font-size: var(--body-size);">
+                ⚡ Ciclo de vida del modelo insignia</td>
+              <td style="padding: 10px 14px; color: #64748b; font-weight: 600; font-size: var(--body-size);">12 - 18
+                meses</td>
+              <td
+                style="padding: 10px 14px; background: rgba(0, 168, 150, 0.06); font-weight: 800; color: #0f766e; font-size: var(--body-size);">
+                <span
+                  style="background: #e0f2fe; color: #0369a1; padding: 3px 8px; border-radius: 12px; font-size: calc(var(--body-size) * 0.9); border: 1px solid #bae6fd;">3
+                  - 5 meses</span>
               </td>
-              <td style="padding: 14px 16px; color: #334155; line-height: 1.45; font-size: 0.9rem;">
-                Informes de la industria sobre iteraciones continuas y despliegues acelerados (ej. ecosistemas OpenAI o3/GPT-5, Anthropic Claude 3.5/5 y Google Gemini 2.5/3.6).
+              <td
+                style="padding: 10px 14px; color: #334155; line-height: 1.4; font-size: calc(var(--body-size) * 0.92);">
+                Informes de la industria sobre iteraciones continuas y despliegues acelerados (ej. OpenAI o3/GPT-5,
+                Anthropic Claude 3.5/5 y Google Gemini 2.5/3.6).
               </td>
             </tr>
 
             <tr style="border-bottom: 1px solid rgba(0,0,0,0.08); background: rgba(248, 250, 252, 0.7);">
-              <td style="padding: 14px 16px; font-weight: 600; color: var(--color-navy-dark);">🧪 Proporción de datos sintéticos en entrenamiento</td>
-              <td style="padding: 14px 16px; color: #64748b; font-weight: 600;">&lt; 10%</td>
-              <td style="padding: 14px 16px; background: rgba(0, 168, 150, 0.06); font-weight: 800; color: #0f766e;">
-                <span style="background: #dcfce7; color: #15803d; padding: 4px 10px; border-radius: 12px; font-size: 0.9rem; border: 1px solid #bbf7d0;">45% - 60%</span>
+              <td
+                style="padding: 10px 14px; font-weight: 600; color: var(--color-navy-dark); font-size: var(--body-size);">
+                🧪 Proporción de datos sintéticos en entrenamiento</td>
+              <td style="padding: 10px 14px; color: #64748b; font-weight: 600; font-size: var(--body-size);">&lt; 10%
               </td>
-              <td style="padding: 14px 16px; color: #334155; line-height: 1.45; font-size: 0.9rem;">
-                Artículos de investigación sobre preentrenamiento y post-entrenamiento (<em>Data Scaling Laws</em> y arquitecturas tipo Microsoft Phi o DeepSeek con destilación de modelos).
+              <td
+                style="padding: 10px 14px; background: rgba(0, 168, 150, 0.06); font-weight: 800; color: #0f766e; font-size: var(--body-size);">
+                <span
+                  style="background: #dcfce7; color: #15803d; padding: 3px 8px; border-radius: 12px; font-size: calc(var(--body-size) * 0.9); border: 1px solid #bbf7d0;">45%
+                  - 60%</span>
+              </td>
+              <td
+                style="padding: 10px 14px; color: #334155; line-height: 1.4; font-size: calc(var(--body-size) * 0.92);">
+                Artículos de investigación sobre preentrenamiento y post-entrenamiento (<em>Data Scaling Laws</em> y
+                arquitecturas tipo Microsoft Phi o DeepSeek).
               </td>
             </tr>
 
             <tr style="border-bottom: 1px solid rgba(0,0,0,0.08); background: rgba(255,255,255,0.7);">
-              <td style="padding: 14px 16px; font-weight: 600; color: var(--color-navy-dark);">🤖 Dependencia de código auto-generado para reentrenamiento</td>
-              <td style="padding: 14px 16px; color: #64748b; font-weight: 600;">Baja (&lt; 20%)</td>
-              <td style="padding: 14px 16px; background: rgba(0, 168, 150, 0.06); font-weight: 800; color: #0f766e;">
-                <span style="background: #fef3c7; color: #b45309; padding: 4px 10px; border-radius: 12px; font-size: 0.9rem; border: 1px solid #fde68a;">Alta (&gt; 50%)</span>
+              <td
+                style="padding: 10px 14px; font-weight: 600; color: var(--color-navy-dark); font-size: var(--body-size);">
+                🤖 Dependencia de código auto-generado para reentrenamiento</td>
+              <td style="padding: 10px 14px; color: #64748b; font-weight: 600; font-size: var(--body-size);">Baja (&lt;
+                20%)</td>
+              <td
+                style="padding: 10px 14px; background: rgba(0, 168, 150, 0.06); font-weight: 800; color: #0f766e; font-size: var(--body-size);">
+                <span
+                  style="background: #fef3c7; color: #b45309; padding: 3px 8px; border-radius: 12px; font-size: calc(var(--body-size) * 0.9); border: 1px solid #fde68a;">Alta
+                  (&gt; 50%)</span>
               </td>
-              <td style="padding: 14px 16px; color: #334155; line-height: 1.45; font-size: 0.9rem;">
-                Reportes de adopción de <em>pipelines</em> de retroalimentación sintética (<em>RLAIF</em> y <em>Distillation Pipelines</em> usando frameworks como Distilabel).
+              <td
+                style="padding: 10px 14px; color: #334155; line-height: 1.4; font-size: calc(var(--body-size) * 0.92);">
+                Reportes de adopción de <em>pipelines</em> de retroalimentación sintética (<em>RLAIF</em> y
+                <em>Distillation Pipelines</em> usando frameworks como Distilabel).
               </td>
             </tr>
 
             <tr style="background: rgba(248, 250, 252, 0.7);">
-              <td style="padding: 14px 16px; font-weight: 600; color: var(--color-navy-dark);">🔄 Frecuencia de parches de capacidades (<em>Fine-tuning</em>/RLHF)</td>
-              <td style="padding: 14px 16px; color: #64748b; font-weight: 600;">Esporádica</td>
-              <td style="padding: 14px 16px; background: rgba(0, 168, 150, 0.06); font-weight: 800; color: #0f766e;">
-                <span style="background: #f3e8ff; color: #6b21a8; padding: 4px 10px; border-radius: 12px; font-size: 0.88rem; border: 1px solid #e9d5ff;">Continua (semanal/mensual vía API)</span>
+              <td
+                style="padding: 10px 14px; font-weight: 600; color: var(--color-navy-dark); font-size: var(--body-size);">
+                🔄 Frecuencia de parches de capacidades (<em>Fine-tuning</em>/RLHF)</td>
+              <td style="padding: 10px 14px; color: #64748b; font-weight: 600; font-size: var(--body-size);">Esporádica
               </td>
-              <td style="padding: 14px 16px; color: #334155; line-height: 1.45; font-size: 0.9rem;">
-                Documentación de lanzamientos incrementales de APIs comerciales y despliegues de razonamiento en tiempo de inferencia.
+              <td
+                style="padding: 10px 14px; background: rgba(0, 168, 150, 0.06); font-weight: 800; color: #0f766e; font-size: var(--body-size);">
+                <span
+                  style="background: #f3e8ff; color: #6b21a8; padding: 3px 8px; border-radius: 12px; font-size: calc(var(--body-size) * 0.9); border: 1px solid #e9d5ff;">Continua
+                  (semanal/mensual vía API)</span>
+              </td>
+              <td
+                style="padding: 10px 14px; color: #334155; line-height: 1.4; font-size: calc(var(--body-size) * 0.92);">
+                Documentación de lanzamientos incrementales de APIs comerciales y despliegues de razonamiento en tiempo
+                de inferencia.
               </td>
             </tr>
           </tbody>
@@ -1067,31 +1225,41 @@
 
   <!-- POPUP ESTADÍSTICAS ENRIQUECIDO -->
   <div class="modal-backdrop" id="modalEstadisticas">
-    <div class="modal-container" style="max-width: 1100px; max-height: 90vh; overflow-y: auto; background: #0f172a; color: #f8fafc; border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);">
-      <div class="modal-header" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 20px 24px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10;">
+    <div class="modal-container"
+      style="max-width: 1100px; max-height: 90vh; overflow-y: auto; background: #0f172a; color: #f8fafc; border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);">
+      <div class="modal-header"
+        style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); padding: 20px 24px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10;">
         <div>
-          <div class="modal-title" style="font-size: 1.4rem; font-weight: 700; color: #38bdf8; font-family: var(--font-heading, sans-serif); display: flex; align-items: center; gap: 10px;">
+          <div class="modal-title"
+            style="font-size: 1.4rem; font-weight: 700; color: #38bdf8; font-family: var(--font-heading, sans-serif); display: flex; align-items: center; gap: 10px;">
             <span>📊</span> Panorama Global y Nacional de Ciberseguridad: Estadísticas Críticas
           </div>
           <div style="font-size: 0.88rem; color: #94a3b8; margin-top: 4px;">
-            Reporte consolidado de fuentes internacionales y nacionales (IBM, ENISA, ANCI Chile, Verizon DBIR, CIPER, Stanford, Entel Digital, CPR)
+            Reporte consolidado de fuentes internacionales y nacionales (IBM, ENISA, ANCI Chile, Verizon DBIR, CIPER,
+            Stanford, Entel Digital, CPR)
           </div>
         </div>
-        <button class="modal-close-btn" onclick="closeModal('modalEstadisticas')" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); width: 36px; height: 36px; border-radius: 50%; font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">&times;</button>
+        <button class="modal-close-btn" onclick="closeModal('modalEstadisticas')"
+          style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); width: 36px; height: 36px; border-radius: 50%; font-size: 1.4rem; cursor: pointer; display: flex; align-items: center; justify-content: center;">&times;</button>
       </div>
 
       <div class="modal-body" style="padding: 24px; display: flex; flex-direction: column; gap: 28px;">
-        
+
         <!-- RESUMEN EJECUTIVO INTRODUCTORIO -->
-        <div style="background: linear-gradient(90deg, rgba(30,58,138,0.4) 0%, rgba(15,23,42,0.6) 100%); border-left: 4px solid #3b82f6; padding: 16px 20px; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; color: #e2e8f0;">
-          💡 <strong>Resumen Ejecutivo:</strong> Este compendio evidencia el impacto económico del cibercrimen, el crecimiento de ataques impulsados por Inteligencia Artificial y la situación crítica de ciberseguridad en Chile con foco en el sector salud y la infraestructura pública.
+        <div
+          style="background: linear-gradient(90deg, rgba(30,58,138,0.4) 0%, rgba(15,23,42,0.6) 100%); border-left: 4px solid #3b82f6; padding: 16px 20px; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; color: #e2e8f0;">
+          💡 <strong>Resumen Ejecutivo:</strong> Este compendio evidencia el impacto económico del cibercrimen, el
+          crecimiento de ataques impulsados por Inteligencia Artificial y la situación crítica de ciberseguridad en
+          Chile con foco en el sector salud y la infraestructura pública.
         </div>
 
         <!-- SECCIÓN 1: COSTOS Y BRECHAS DE DATOS -->
         <div>
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(239, 68, 68, 0.3); padding-bottom: 8px;">
+          <div
+            style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(239, 68, 68, 0.3); padding-bottom: 8px;">
             <span style="font-size: 1.3rem;">🚨</span>
-            <h3 style="font-size: 1.2rem; font-weight: 700; color: #fca5a5; margin: 0; font-family: var(--font-heading, sans-serif);">
+            <h3
+              style="font-size: 1.2rem; font-weight: 700; color: #fca5a5; margin: 0; font-family: var(--font-heading, sans-serif);">
               1. COSTOS Y BRECHAS DE DATOS (GLOBAL Y SECTOR SALUD)
             </h3>
           </div>
@@ -1099,51 +1267,72 @@
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px;">
 
             <!-- Tarjeta 1.1 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #f87171; font-size: 1.05rem; font-weight: 600; margin: 0;">💰 Costos Globales vs. Salud</h4>
-                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);">IBM Report 2025</span>
+                <h4 style="color: #f87171; font-size: 1.05rem; font-weight: 600; margin: 0;">💰 Costos Globales vs.
+                  Salud</h4>
+                <span
+                  style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);">IBM
+                  Report 2025</span>
               </div>
               <div style="display: flex; gap: 12px; margin: 12px 0;">
-                <div style="flex: 1; background: rgba(15, 23, 42, 0.6); padding: 10px; border-radius: 8px; text-align: center;">
+                <div
+                  style="flex: 1; background: rgba(15, 23, 42, 0.6); padding: 10px; border-radius: 8px; text-align: center;">
                   <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase;">Promedio Global</div>
                   <div style="font-size: 1.25rem; font-weight: 800; color: #cbd5e1; margin-top: 2px;">USD 4,44M</div>
                 </div>
-                <div style="flex: 1; background: rgba(153, 27, 27, 0.3); padding: 10px; border-radius: 8px; text-align: center; border: 1px solid rgba(239, 68, 68, 0.4);">
+                <div
+                  style="flex: 1; background: rgba(153, 27, 27, 0.3); padding: 10px; border-radius: 8px; text-align: center; border: 1px solid rgba(239, 68, 68, 0.4);">
                   <div style="font-size: 0.75rem; color: #fca5a5; text-transform: uppercase;">Sector Salud</div>
                   <div style="font-size: 1.25rem; font-weight: 800; color: #f87171; margin-top: 2px;">USD 7,42M</div>
                 </div>
               </div>
               <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
-                Cifras del reporte <em>"Cost of a Data Breach Report 2025"</em> de IBM, correspondientes a incidentes ocurridos entre <strong>marzo de 2024 y febrero de 2025</strong>.
+                Cifras del reporte <em>"Cost of a Data Breach Report 2025"</em> de IBM, correspondientes a incidentes
+                ocurridos entre <strong>marzo de 2024 y febrero de 2025</strong>.
               </p>
             </div>
 
             <!-- Tarjeta 1.2 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #f87171; font-size: 1.05rem; font-weight: 600; margin: 0;">📈 Costo Máximo en Salud</h4>
-                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);">Breach Stats / HIPAA 2026</span>
+                <h4 style="color: #f87171; font-size: 1.05rem; font-weight: 600; margin: 0;">📈 Costo Máximo en Salud
+                </h4>
+                <span
+                  style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);">Breach
+                  Stats / HIPAA 2026</span>
               </div>
-              <div style="background: rgba(153, 27, 27, 0.25); padding: 10px 14px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #ef4444;">
+              <div
+                style="background: rgba(153, 27, 27, 0.25); padding: 10px 14px; border-radius: 8px; margin: 10px 0; border-left: 3px solid #ef4444;">
                 <div style="font-size: 1.35rem; font-weight: 800; color: #fca5a5;">USD 11,2 Millones</div>
-                <div style="font-size: 0.8rem; color: #f87171; margin-top: 2px;">Costo máximo histórico citado a julio de 2026 en <em>CyberSecurity Breach Statistics</em>.</div>
+                <div style="font-size: 0.8rem; color: #f87171; margin-top: 2px;">Costo máximo histórico citado a julio
+                  de 2026 en <em>CyberSecurity Breach Statistics</em>.</div>
               </div>
               <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
-                Asimismo, <em>The HIPAA Journal</em> proyecta un costo sectorial de <strong>USD 6,64 millones</strong> para 2026.
+                Asimismo, <em>The HIPAA Journal</em> proyecta un costo sectorial de <strong>USD 6,64 millones</strong>
+                para 2026.
               </p>
             </div>
 
             <!-- Tarjeta 1.3 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #f87171; font-size: 1.05rem; font-weight: 600; margin: 0;">🏥 Frecuencia en Salud & Inactividad</h4>
-                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);">Frost & Sullivan / BlackFog</span>
+                <h4 style="color: #f87171; font-size: 1.05rem; font-weight: 600; margin: 0;">🏥 Frecuencia en Salud &
+                  Inactividad</h4>
+                <span
+                  style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.4);">Frost
+                  & Sullivan / BlackFog</span>
               </div>
               <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.55;">
-                <li><strong>90% de afectados:</strong> Estudio de Frost & Sullivan evidencia que el 90% de los recintos de salud fueron afectados en los últimos 3 años.</li>
-                <li><strong>27 Ataques en Enero 2026:</strong> Registrados en el sector salud en el informe <em>"The State of Ransomware: January 2026"</em> por BlackFog.</li>
-                <li><strong>279 Días de inactividad:</strong> Promedio global para identificar y contener una brecha de datos (IBM 2025).</li>
+                <li><strong>90% de afectados:</strong> Estudio de Frost & Sullivan evidencia que el 90% de los recintos
+                  de salud fueron afectados en los últimos 3 años.</li>
+                <li><strong>27 Ataques en Enero 2026:</strong> Registrados en el sector salud en el informe <em>"The
+                    State of Ransomware: January 2026"</em> por BlackFog.</li>
+                <li><strong>279 Días de inactividad:</strong> Promedio global para identificar y contener una brecha de
+                  datos (IBM 2025).</li>
               </ul>
             </div>
 
@@ -1152,9 +1341,11 @@
 
         <!-- SECCIÓN 2: ESTADÍSTICAS GENERALES DE CIBERATAQUES E INGENIERÍA SOCIAL -->
         <div>
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(56, 189, 248, 0.3); padding-bottom: 8px;">
+          <div
+            style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(56, 189, 248, 0.3); padding-bottom: 8px;">
             <span style="font-size: 1.3rem;">🌐</span>
-            <h3 style="font-size: 1.2rem; font-weight: 700; color: #38bdf8; margin: 0; font-family: var(--font-heading, sans-serif);">
+            <h3
+              style="font-size: 1.2rem; font-weight: 700; color: #38bdf8; margin: 0; font-family: var(--font-heading, sans-serif);">
               2. ESTADÍSTICAS GENERALES DE CIBERATAQUES E INGENIERÍA SOCIAL (INTERNACIONAL)
             </h3>
           </div>
@@ -1162,22 +1353,32 @@
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px;">
 
             <!-- Tarjeta 2.1 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 600; margin: 0;">🎣 Phishing & Shadow AI</h4>
-                <span style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">IBM 2025</span>
+                <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 600; margin: 0;">🎣 Phishing & Shadow AI
+                </h4>
+                <span
+                  style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">IBM
+                  2025</span>
               </div>
               <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.55;">
-                <li><strong>Vector de Acceso (16%):</strong> El Phishing representa el 16% de las puertas de entrada iniciales en incidentes entre 2024 y 2025.</li>
-                <li><strong>Shadow AI (20% de brechas):</strong> El uso no autorizado de IA causa el 20% de brechas con sobrecostos de <strong>USD $200.000 a USD $670.000</strong>.</li>
+                <li><strong>Vector de Acceso (16%):</strong> El Phishing representa el 16% de las puertas de entrada
+                  iniciales en incidentes entre 2024 y 2025.</li>
+                <li><strong>Shadow AI (20% de brechas):</strong> El uso no autorizado de IA causa el 20% de brechas con
+                  sobrecostos de <strong>USD $200.000 a USD $670.000</strong>.</li>
               </ul>
             </div>
 
             <!-- Tarjeta 2.2 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 600; margin: 0;">🇪🇺 Amenazas en Europa</h4>
-                <span style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">ENISA 2025</span>
+                <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 600; margin: 0;">🇪🇺 Amenazas en Europa
+                </h4>
+                <span
+                  style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">ENISA
+                  2025</span>
               </div>
               <p style="font-size: 0.88rem; color: #cbd5e1; margin: 0 0 6px 0;">
                 Datos del <em>"ENISA Threat Landscape 2025"</em> (1 julio 2024 al 30 junio 2025):
@@ -1189,14 +1390,20 @@
             </div>
 
             <!-- Tarjeta 2.3 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 600; margin: 0;">👤 Cadena de Suministro & Factor Humano</h4>
-                <span style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">Verizon DBIR / Stanford</span>
+                <h4 style="color: #38bdf8; font-size: 1.05rem; font-weight: 600; margin: 0;">👤 Cadena de Suministro &
+                  Factor Humano</h4>
+                <span
+                  style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);">Verizon
+                  DBIR / Stanford</span>
               </div>
               <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.55;">
-                <li><strong>Cadena de Suministro (30%):</strong> Ataques vía proveedores (IBM / Verizon DBIR 2025). Ransomware afecta al <strong>44%</strong>.</li>
-                <li><strong>Factor Humano (68% - 95%):</strong> 68% en Verizon DBIR 2025 y 88% atribuible a error humano según la <em>Universidad de Stanford</em>.</li>
+                <li><strong>Cadena de Suministro (30%):</strong> Ataques vía proveedores (IBM / Verizon DBIR 2025).
+                  Ransomware afecta al <strong>44%</strong>.</li>
+                <li><strong>Factor Humano (68% - 95%):</strong> 68% en Verizon DBIR 2025 y 88% atribuible a error humano
+                  según la <em>Universidad de Stanford</em>.</li>
               </ul>
             </div>
 
@@ -1205,9 +1412,11 @@
 
         <!-- SECCIÓN 3: ESTADÍSTICAS EN CHILE (SECTOR SALUD) -->
         <div>
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(168, 85, 247, 0.3); padding-bottom: 8px;">
+          <div
+            style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(168, 85, 247, 0.3); padding-bottom: 8px;">
             <span style="font-size: 1.3rem;">🇨🇱</span>
-            <h3 style="font-size: 1.2rem; font-weight: 700; color: #c084fc; margin: 0; font-family: var(--font-heading, sans-serif);">
+            <h3
+              style="font-size: 1.2rem; font-weight: 700; color: #c084fc; margin: 0; font-family: var(--font-heading, sans-serif);">
               3. ESTADÍSTICAS EN CHILE (SECTOR SALUD)
             </h3>
           </div>
@@ -1215,38 +1424,55 @@
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px;">
 
             <!-- Tarjeta 3.1 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #c084fc; font-size: 1.05rem; font-weight: 600; margin: 0;">📁 Vulnerabilidad Minsal</h4>
-                <span style="background: rgba(168, 85, 247, 0.2); color: #e9d5ff; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.4);">Investigación CIPER</span>
+                <h4 style="color: #c084fc; font-size: 1.05rem; font-weight: 600; margin: 0;">📁 Vulnerabilidad Minsal
+                </h4>
+                <span
+                  style="background: rgba(168, 85, 247, 0.2); color: #e9d5ff; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.4);">Investigación
+                  CIPER</span>
               </div>
-              <div style="background: rgba(88, 28, 135, 0.3); padding: 8px 12px; border-radius: 8px; margin: 8px 0; border: 1px solid rgba(168, 85, 247, 0.3);">
+              <div
+                style="background: rgba(88, 28, 135, 0.3); padding: 8px 12px; border-radius: 8px; margin: 8px 0; border: 1px solid rgba(168, 85, 247, 0.3);">
                 <span style="font-size: 1.25rem; font-weight: 800; color: #f0abfc;">3 Millones de Archivos</span>
               </div>
               <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
-                Investigación publicada por CIPER el <strong>5 de marzo de 2016</strong>: reportó accesos no autorizados a carpetas compartidas sin seguridad entre 2012 y 2015.
+                Investigación publicada por CIPER el <strong>5 de marzo de 2016</strong>: reportó accesos no autorizados
+                a carpetas compartidas sin seguridad entre 2012 y 2015.
               </p>
             </div>
 
             <!-- Tarjeta 3.2 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #c084fc; font-size: 1.05rem; font-weight: 600; margin: 0;">🏥 Ransomware a Salud Nacional</h4>
-                <span style="background: rgba(168, 85, 247, 0.2); color: #e9d5ff; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.4);">Ransomware.live</span>
+                <h4 style="color: #c084fc; font-size: 1.05rem; font-weight: 600; margin: 0;">🏥 Ransomware a Salud
+                  Nacional</h4>
+                <span
+                  style="background: rgba(168, 85, 247, 0.2); color: #e9d5ff; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.4);">Ransomware.live</span>
               </div>
               <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
-                Casos como el ataque a <strong>Clínica Dávila</strong> (víctima del grupo criminal <em>Devman</em>) y otros hospitales nacionales registrados en el monitor en tiempo real <em>Ransomware.live</em> entre <strong>diciembre de 2025 y mediados de 2026</strong>.
+                Casos como el ataque a <strong>Clínica Dávila</strong> (víctima del grupo criminal <em>Devman</em>) y
+                otros hospitales nacionales registrados en el monitor en tiempo real <em>Ransomware.live</em> entre
+                <strong>diciembre de 2025 y mediados de 2026</strong>.
               </p>
             </div>
 
             <!-- Tarjeta 3.3 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #c084fc; font-size: 1.05rem; font-weight: 600; margin: 0;">🗝️ Credenciales e Intervención ANCI</h4>
-                <span style="background: rgba(168, 85, 247, 0.2); color: #e9d5ff; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.4);">Oficio Secreto ANCI</span>
+                <h4 style="color: #c084fc; font-size: 1.05rem; font-weight: 600; margin: 0;">🗝️ Credenciales e
+                  Intervención ANCI</h4>
+                <span
+                  style="background: rgba(168, 85, 247, 0.2); color: #e9d5ff; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.4);">Oficio
+                  Secreto ANCI</span>
               </div>
               <p style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.5; margin: 0;">
-                Detallado en el documento <em>"El Ecosistema de las Ciberamenazas Globales y su Impacto en la Infraestructura de Salud Pública en Chile"</em>, citando un <strong>Oficio Secreto de la Agencia Nacional de Ciberseguridad (ANCI)</strong> emitido en <strong>mayo de 2026</strong>.
+                Detallado en el documento <em>"El Ecosistema de las Ciberamenazas Globales y su Impacto en la
+                  Infraestructura de Salud Pública en Chile"</em>, citando un <strong>Oficio Secreto de la Agencia
+                  Nacional de Ciberseguridad (ANCI)</strong> emitido en <strong>mayo de 2026</strong>.
               </p>
             </div>
 
@@ -1255,9 +1481,11 @@
 
         <!-- SECCIÓN 4: ESTADÍSTICAS EN CHILE (GENERAL Y TRANSVERSAL) -->
         <div>
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(245, 158, 11, 0.3); padding-bottom: 8px;">
+          <div
+            style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px; border-bottom: 2px solid rgba(245, 158, 11, 0.3); padding-bottom: 8px;">
             <span style="font-size: 1.3rem;">📊</span>
-            <h3 style="font-size: 1.2rem; font-weight: 700; color: #fbbf24; margin: 0; font-family: var(--font-heading, sans-serif);">
+            <h3
+              style="font-size: 1.2rem; font-weight: 700; color: #fbbf24; margin: 0; font-family: var(--font-heading, sans-serif);">
               4. ESTADÍSTICAS EN CHILE (GENERAL Y TRANSVERSAL)
             </h3>
           </div>
@@ -1265,12 +1493,16 @@
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
 
             <!-- Tarjeta 4.1 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
                 <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 600; margin: 0;">⚔️ Ataques Semanales</h4>
-                <span style="background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">Check Point Research</span>
+                <span
+                  style="background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">Check
+                  Point Research</span>
               </div>
-              <div style="background: rgba(180, 83, 9, 0.25); padding: 10px; border-radius: 8px; margin: 8px 0; text-align: center;">
+              <div
+                style="background: rgba(180, 83, 9, 0.25); padding: 10px; border-radius: 8px; margin: 8px 0; text-align: center;">
                 <span style="font-size: 1.35rem; font-weight: 800; color: #fef08a;">1.706 ciberataques</span>
                 <div style="font-size: 0.75rem; color: #fcd34d;">semanales por empresa en Chile (Marzo 2026)</div>
               </div>
@@ -1278,42 +1510,57 @@
             </div>
 
             <!-- Tarjeta 4.2 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 600; margin: 0;">🕵️ InfoStealers & Ransomware</h4>
-                <span style="background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">Entel Digital 2026</span>
+                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 600; margin: 0;">🕵️ InfoStealers &
+                  Ransomware</h4>
+                <span
+                  style="background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">Entel
+                  Digital 2026</span>
               </div>
               <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.5;">
-                <li><strong>169.310 Equipos Comprometidos:</strong> Infecciones por InfoStealers (+34% de alza frente a 2024).</li>
-                <li><strong>Qilin y Akira:</strong> Concentran el <strong>55%</strong> de los incidentes de ransomware en el país.</li>
+                <li><strong>169.310 Equipos Comprometidos:</strong> Infecciones por InfoStealers (+34% de alza frente a
+                  2024).</li>
+                <li><strong>Qilin y Akira:</strong> Concentran el <strong>55%</strong> de los incidentes de ransomware
+                  en el país.</li>
               </ul>
             </div>
 
             <!-- Tarjeta 4.3 -->
-            <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 18px;">
+            <div
+              style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 600; margin: 0;">👥 Percepción Directiva & Phishing</h4>
-                <span style="background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">UDP / AE / Prey</span>
+                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 600; margin: 0;">👥 Percepción Directiva &
+                  Phishing</h4>
+                <span
+                  style="background: rgba(245, 158, 11, 0.15); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 8px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.3);">UDP
+                  / AE / Prey</span>
               </div>
               <ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #e2e8f0; line-height: 1.5;">
-                <li><strong>Riesgo Principal #1:</strong> 54,6% de directivos sufrieron incidentes en los últimos 12 meses (Estudio AE y UDP 2026).</li>
-                <li><strong>Prey Project (2024):</strong> Phishing subió <strong>40%</strong> y <strong>55%</strong> de organizaciones fueron víctimas de ransomware.</li>
+                <li><strong>Riesgo Principal #1:</strong> 54,6% de directivos sufrieron incidentes en los últimos 12
+                  meses (Estudio AE y UDP 2026).</li>
+                <li><strong>Prey Project (2024):</strong> Phishing subió <strong>40%</strong> y <strong>55%</strong> de
+                  organizaciones fueron víctimas de ransomware.</li>
               </ul>
             </div>
 
             <!-- Tarjeta 4.4 (Ancho Completo) -->
-            <div style="grid-column: 1 / -1; background: linear-gradient(90deg, rgba(30,41,59,0.9) 0%, rgba(120,53,15,0.25) 100%); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 12px; padding: 18px;">
+            <div
+              style="grid-column: 1 / -1; background: linear-gradient(90deg, rgba(30,41,59,0.9) 0%, rgba(120,53,15,0.25) 100%); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 12px; padding: 18px;">
               <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
-                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 700; margin: 0;">🏛️ Caída de Mercado Público (Ataque a IFX Networks)</h4>
-                <span style="background: rgba(245, 158, 11, 0.2); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.4);">ISCI & U. de Chile (2024)</span>
+                <h4 style="color: #fbbf24; font-size: 1.05rem; font-weight: 700; margin: 0;">🏛️ Caída de Mercado
+                  Público (Ataque a IFX Networks)</h4>
+                <span
+                  style="background: rgba(245, 158, 11, 0.2); color: #fde047; font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; border: 1px solid rgba(245, 158, 11, 0.4);">ISCI
+                  & U. de Chile (2024)</span>
               </div>
               <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
-                <div style="background: rgba(15, 23, 42, 0.8); padding: 10px 16px; border-radius: 8px; border-left: 4px solid #f59e0b;">
-                  <div style="font-size: 0.72rem; color: #94a3b8; text-transform: uppercase;">Impacto en Transacciones</div>
-                  <div style="font-size: 1.3rem; font-weight: 800; color: #fbbf24;">$150.000 Millones CLP</div>
-                </div>
                 <div style="flex: 1; font-size: 0.88rem; color: #cbd5e1; line-height: 1.5;">
-                  El ciberataque al proveedor IFX Networks (ocurrido entre el 12 y 19 de septiembre de 2023) paralizó el portal de compras estatales, forzando transacciones de contingencia manual. Los datos de impacto fueron consolidados en el informe final por el Instituto de Sistemas Complejos de Ingeniería (ISCI) y la Universidad de Chile (publicado en <strong>abril de 2024</strong>).
+                  El ciberataque al proveedor IFX Networks (ocurrido entre el 12 y 19 de septiembre de 2023) paralizó el
+                  portal de compras estatales, forzando transacciones de contingencia manual. Los datos de impacto
+                  fueron consolidados en el informe final por el Instituto de Sistemas Complejos de Ingeniería (ISCI) y
+                  la Universidad de Chile (publicado en <strong>abril de 2024</strong>).
                 </div>
               </div>
             </div>

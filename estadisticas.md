@@ -51,4 +51,4 @@
 - **Incremento del Phishing (40%) y Víctimas de Ransomware (55%):** 
   - Provienen de un informe de **Prey Project** basado en los datos consolidados del año 2024 para Chile.
 - **Caída de Mercado Público (Caso IFX Networks):** 
-  - Incidente que paralizó **$150.000 millones de pesos** y forzó transacciones de contingencia manual (del 12 al 19 de septiembre de 2023). Los datos de impacto fueron calculados por el **Instituto de Sistemas Complejos de Ingeniería (ISCI)** y la **Universidad de Chile** (publicado en abril de 2024).
+  - Incidente que paralizó el portal de compras estatales y forzó transacciones de contingencia manual (del 12 al 19 de septiembre de 2023). Los datos de impacto fueron calculados por el **Instituto de Sistemas Complejos de Ingeniería (ISCI)** y la **Universidad de Chile** (publicado en abril de 2024).
