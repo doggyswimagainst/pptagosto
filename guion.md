@@ -12,7 +12,25 @@
 * **Guion del Expositor:**  
 * *"Buenos días / tardes. La presente sesión aborda las exigencias legales que rigen el tratamiento de la información y la infraestructura digital en nuestra institución. El cumplimiento de estas normas es obligatorio para todo el personal, independientemente de su régimen contractual. Analizaremos las implicancias jurídicas directas sobre el puesto de trabajo y las conductas requeridas para dar cumplimiento al marco regulatorio vigente."*
 
-### **📄 Diapositiva 2: Ley N° 21.663 – Operador de Importancia Vital (OIV)**
+### **📄 Diapositiva 2: Simulación QR – Comportamiento de Usuarios (Phishing Físico / QShing)**
+
+* **Título:** Simulación QR: Comportamiento de Usuarios ante Cartel Publicitario  
+* **Subtítulo:** Medición de Accesos a Código QR Promocional ("Nueva Cafetería") en Pasillos del Hospital (03 de Agosto de 2026)  
+* **Texto de Lámina:**  
+  * **Conteo Total:** 30 accesos exitosos registrados (peticiones HTTP 200 a `/qr/` y `/qr/logo.png`).  
+  * **Distribución de Horarios (UTC-4):**  
+    * 10:00 - 10:59 hrs: 4 accesos (Consulta de logo vía Google Images proxy y acceso inicial).  
+    * **11:00 - 11:59 hrs:** **12 accesos (40%)** — *Pico máximo durante el horario de café del personal*.  
+    * 12:00 - 12:59 hrs: 3 accesos (Derivados desde `me-qr.com`).  
+    * 13:00 - 13:59 hrs: 3 accesos.  
+    * 15:00 - 15:59 hrs: 6 accesos (Segundo pico en horario de descanso de tarde).  
+    * 16:00 - 16:59 hrs: 1 acceso (Referer Google Keep).  
+    * 21:00 - 21:59 hrs: 3 accesos (Visitas en turno nocturno).  
+  * **Riesgo de Ciberseguridad (QShing):** Exposición de la confianza del entorno hospitalario ante cebos físicos y vectores de infección en dispositivos móviles (BYOD).  
+* **Guion del Expositor:**  
+* *"En esta lámina analizamos un experimento de campo realizado en los pasillos del hospital: la colocación de un aviso promocional con un código QR que ofrecía descuentos en una nueva cafetería. Durante el 3 de agosto de 2026 registramos un total de 30 accesos exitosos a la ruta simulada. El 40% de las lecturas se concentraron en el horario de café entre las 11:00 y 12:00 hrs. Este ejercicio demuestra la vulnerabilidad frente a vectores de Phishing Físico o QShing, donde la curiosidad impulsa a los usuarios a escanear enlaces no verificados en el entorno hospitalario."*
+
+### **📄 Diapositiva 3: Ley N° 21.663 – Operador de Importancia Vital (OIV)**
 
 * **Título:** Ley Marco de Ciberseguridad N° 21.663: Exigencias y Tiempos de Respuesta  
 * **Texto de Lámina:**  
