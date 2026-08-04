@@ -27,8 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const fontScaleLabels = ['Texto Base (Grande)', 'Auditorio XL (+35%)', 'Auditorio XXL (+75%)'];
 
   // Inicializar Badges y Overview
-  const contentSlidesCount = totalSlides - 1;
-  totalSlidesBadge.textContent = contentSlidesCount;
+  totalSlidesBadge.textContent = totalSlides;
   buildOverviewGrid();
   updateSlide(0);
 
@@ -46,14 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     currentIndex = index;
-    if (currentIndex === 0) {
-      currentSlideBadge.textContent = 'Inicio';
-    } else {
-      currentSlideBadge.textContent = currentIndex;
-    }
+    currentSlideBadge.textContent = currentIndex + 1;
 
     // Actualizar Barra de Progreso
-    const progressPercent = (currentIndex / contentSlidesCount) * 100;
+    const progressPercent = (currentIndex / (totalSlides - 1)) * 100;
     progressBarFill.style.width = `${Math.min(progressPercent, 100)}%`;
 
     // Actualizar Estado de Botones Anterior / Siguiente
@@ -210,8 +205,8 @@ document.addEventListener('DOMContentLoaded', () => {
     overviewGrid.innerHTML = '';
     slides.forEach((slide, i) => {
       const titleElem = slide.querySelector('.slide-h1');
-      const titleText = titleElem ? titleElem.textContent : (i === 0 ? 'Pre-Presentación' : `Lámina ${i}`);
-      const labelText = i === 0 ? 'INICIO (PRE-PRESENTACIÓN)' : `LÁMINA ${i} DE ${contentSlidesCount}`;
+      const titleText = titleElem ? titleElem.textContent : `Lámina ${i + 1}`;
+      const labelText = `LÁMINA ${i + 1} DE ${totalSlides}`;
       
       const card = document.createElement('div');
       card.className = `overview-card ${i === 0 ? 'active' : ''}`;
